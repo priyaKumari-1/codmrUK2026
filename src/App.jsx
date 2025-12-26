@@ -29,6 +29,8 @@ import TechnicalSupport from './ServiceComponents/TechnicalSupport/TechnicalSupp
 import AgentforceImplementation from './BlogsComponents/AgentforceImplementation/AgentforceImplementation';
 import SalesforceEinstein from './BlogsComponents/SalesforceEinstein/SalesforceEinstein';
 import SalesforceRevenueCloud from './BlogsComponents/SalesforceRevenueCloud/SalesforceRevenueCloud';
+import SalesforcePartnerLogo from './components/SalesforcePartnerLogo/SalesforcePartnerLogo';
+import NavbarTest from './components/Navbar/NavbarTest/NavbarTest';
 
 
 function App() {
@@ -44,8 +46,10 @@ function App() {
   return (
     <>
       <ScrollOnTop/>
+      <SalesforcePartnerLogo/>
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
+        <NavbarTest/>
         <div>
           <Routes>
             <Route path="/" element={<Home />} />

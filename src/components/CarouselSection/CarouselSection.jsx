@@ -1,4 +1,4 @@
-// import "./CarouselSection.css";
+
 
 // const CarouselSection = ({ images }) => {
 //   return (
@@ -59,6 +59,7 @@
 
 // export default CarouselSection;
 
+// import "./CarouselSection.css";
 
 function CarouselSection() {
   return (

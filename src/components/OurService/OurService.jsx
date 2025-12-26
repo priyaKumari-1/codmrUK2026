@@ -29,7 +29,7 @@ function OurService() {
           </div>
 
           <h1 className='ds-3 my-3 aos-init aos-animate ourService_heading'>Explore Our Services</h1> 
-          <p className='ourServicepara' data-aos="fade-zoom-in" data-aos-delay="100" class="aos-init aos-animate">We specialize in automation, AI development, software engineering, and tailored tech stacks.</p>
+          <p className='ourServicepara' data-aos="fade-zoom-in" data-aos-delay="100" class="aos-init aos-animate">We specialize in AI powered automation, AI development, high-performance software engineering and tailored tech stacks.</p>
         </div>
 
         {/* services Container */}

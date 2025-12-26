@@ -53,7 +53,8 @@ function SalesforceCrm() {
 
           <h3>Service</h3>
 
-            <div className='d-flex flex-wrap pb-5'>
+            {/* <div className='d-flex flex-wrap pb-5'> */}
+            <div className='pb-5 d-flex flex-wrap'>
             <ServiceMainPagePills 
              pillLabel="Higher Education"
              title="Higher Education"

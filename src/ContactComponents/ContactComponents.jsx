@@ -14,7 +14,6 @@ function ContactComponents() {
       <ContactSection_SecondSection/>
       <ContactSection_ThirdSection/>
       <ContactMapSection/>
-      
     </>
   )
 }

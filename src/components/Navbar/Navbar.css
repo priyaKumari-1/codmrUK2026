@@ -1,4 +1,4 @@
-.navbar{
+/* .navbar{
   background:white;
 }
 
@@ -17,14 +17,13 @@
  transform: scale3d(1.05, 1.05, 1);
   text-shadow: 0 0 8px rgba(141, 120, 220, 0.6);
 }
-/* Navbar link hover */
+
 .navbar .nav-link:hover {
   color: #8d78dc !important;
   transform: scale3d(1.05, 1.05, 1);
   text-shadow: 0 0 8px rgba(141, 120, 220, 0.6);
 }
 
-/* Mega Dropdown hover (Services) */
 .mega-dropdown:hover .mega-menu {
   display: block;
   opacity: 1;
@@ -32,14 +31,12 @@
   transform: translateX(-50%) translateY(0);
 }
 
-/* Mega Menu item hover */
 .mega-menu .dropdown-item:hover {
   color: #7354f5;
   padding-left: 1rem;
   background: rgba(115, 84, 245, 0.05);
 }
 
-/* Blog Dropdown hover */
 .mega-dropdown1:hover .mega-menu1 {
   display: block;
   opacity: 1;
@@ -47,14 +44,12 @@
   transform: translateX(-50%) translateY(0);
 }
 
-/* Blog dropdown item hover */
 .mega-menu1 .dropdown-item:hover {
   color: #7354f5;
   padding-left: 1rem;
   background: rgba(115, 84, 245, 0.05);
 }
 
-/* Dark mode hover effects */
 body.dark-mode .mega-menu .dropdown-item:hover {
   color: #9d86f5;
   background: rgba(157, 134, 245, 0.1);
@@ -65,7 +60,6 @@ body.dark-mode .mega-menu1 .dropdown-item:hover {
   background: rgba(157, 134, 245, 0.1);
 }
 
-/* Disable hover on mobile */
 @media (max-width: 991px) {
   .mega-dropdown:hover .mega-menu,
   .mega-dropdown1:hover .mega-menu1 {
@@ -86,8 +80,6 @@ body.dark-mode .darkModebtn{
   background-color: #151524;
 }
 
-
-/* navbar drop down */
 .mega-dropdown {
   position: relative;     
   display: inline-block;
@@ -128,7 +120,6 @@ body.dark-mode .darkModebtn{
 }
 
 .mega-menu .dropdown-item:hover {
-  /* color: gray; */
    color: #7354f5;
 }
 
@@ -196,7 +187,6 @@ body.dark-mode .mega-menu .dropdown-item:hover{
   color: gray;
 }
 
-/* for blog drop down */
 body.dark-mode .mega-dropdown1 .mega-menu1 {
 background-color: #151524;
 }
@@ -210,15 +200,11 @@ body.dark-mode .mega-menu1 .dropdown-item1:hover{
 }
 
 
-
-/* for responsive  */
 @media (max-width: 991px) {
   .mega-menu,
   .mega-menu1 {
     position: static;
     transform: none;
-    /* width: 100% !important; */
-    /* width:"100vw"; */
     box-shadow: none;
     padding: 1rem;
     display: none; 
@@ -230,4 +216,4 @@ body.dark-mode .mega-menu1 .dropdown-item1:hover{
   .dropdown-menu-service{
     height:"100vw"
   }
-}
+} */

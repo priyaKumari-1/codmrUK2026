@@ -36,3 +36,14 @@
 
 }
 
+.blogHomeContainerImg {
+  width: 20rem;
+  height: 14rem;          /* set SAME height for all images */
+  overflow: hidden;      /* hides extra parts */
+}
+
+.blogHomeContainerImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* fills container without distortion */
+}

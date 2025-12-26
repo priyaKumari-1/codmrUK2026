@@ -20,7 +20,7 @@ function Footer() {
           <div className="footer-logo">
             <img src={logo} alt="CODM" />
             <a href="https://saasailabs.codmsoftware.co.uk/" target="_blank" rel="noopener noreferrer">
-              <img src={saalLogo} alt="CODM" />
+              <img src={saalLogo} alt="CODM"/>
             </a>
           </div>
           <p className="footer-text">
@@ -32,7 +32,7 @@ function Footer() {
             <a href="https://twitter.com" target="_blank" rel="noreferrer">
               <FaXTwitter />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/company/codm-software-limited/" target="_blank" rel="noreferrer">
               <FaLinkedinIn />
             </a>
 
@@ -90,5 +90,4 @@ function Footer() {
     </footer>
   );
 }
-
 export default Footer;

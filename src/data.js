@@ -1,3 +1,3 @@
 export const heroSection = {
-    HEADING: "Delivering enterprise-scale solutions with futuristic thinking",
+    HEADING: "Delivering enterprise-scale AI solutions with futuristic thinking",
 }

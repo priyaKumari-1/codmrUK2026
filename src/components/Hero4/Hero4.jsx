@@ -38,7 +38,7 @@ function Hero4() {
                   Driven by<br /> Innovation.<br /> Focused on <br />Impact.
                 </h1>
                 <p className="mb-5">
-                  Our vision is to revolutionize the digital world by creating intelligent, scalable, and user-friendly technology that empowers businesses and enriches lives globally.
+                  Our vision is to revolutionize the digital world by creating ai driven, scalable, and user-friendly technology that empowers businesses and enriches lives globally.
                 </p>
 
                 {/* Buttons */}

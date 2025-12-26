@@ -36,3 +36,10 @@
   color: white;
   font-size: 20px;
 }
+
+
+@media (max-width:567px){
+  .btn-scroll-top {
+    right: 13px;
+  }
+}

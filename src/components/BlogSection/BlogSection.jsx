@@ -1,9 +1,15 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
-import blog1 from "../../assets/imgs/blogs/integrationframework.png";
-import blog2 from "../../assets/imgs/blogs/triggerframework.png";
-import blog3 from "../../assets/imgs/blogs/revenuecloud.png";
+// import blog1 from "../../assets/imgs/blogs/integrationframework.png";
+
+// import blog2 from "../../assets/imgs/blogs/triggerframework.png";
+// import blog3 from "../../assets/imgs/blogs/revenuecloud.png";
+
+import blog1 from "../../assets/imgs/blogs/automation_apexTrigger.webp";
+import blog2 from '../../assets/imgs/services-details-2/triggerframework/img-1.png';
+import blog3 from "../../assets/imgs/services-details-2/Revenue-Cloud/img-3.jpg";
+import blog4 from "../../assets/imgs/services-details-2/EinsteinAI/img-1.png";
 
 import DotBtn from "../../utils/Dotbtn/Dotbtn";
 import { Link } from "react-router-dom";
@@ -12,7 +18,7 @@ import "./BlogSection.css";
 const blogData = [
   {
     image: blog1,
-    category: "Integration",
+    category: "Integration Framework",
     title: "Building a Scalable Integration Framework in Salesforce",
     description:
       "Learn how to design reusable, scalable integration patterns in Salesforce using REST, Apex, and external services.",
@@ -35,12 +41,12 @@ const blogData = [
     link: "/revenueCloud.html",
   }, 
   {
-    image: blog3,
-    category: "Revenue Ops",
-    title: "From Salesforce CPQ to Revenue Cloud - The Journey",
+    image: blog4,
+    category: "EinsteinAI",
+    title: "Salesforce Einstein + AI Synergy",
     description:
-      "Explore how Salesforce CPQ connects seamlessly with Revenue Cloud to enable full-cycle revenue operations and automation.",
-    link: "/revenueCloud.html",
+      "Elevate your Salesforce CRM with the power of embedded Artificial Intelligence. ",
+    link: "/blog/Salesforce-Einstein",
   },
 ];
 
@@ -104,14 +110,14 @@ function BlogSection() {
           {blogData.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="blogHomeContainer bg-white rounded-3 p-3 position-relative">
-
+               <div className="blogHomeContainerImg">
                 <img
                   src={item.image}
                   alt={item.title}
                   width="100%"
                   className="rounded-3"
                 />
-
+               </div>
                 <div className="card-body p-0">
                   <p className="blagCards_btn tag-spacing text-linear-2 text-uppercase mt-3">
                     {item.category}

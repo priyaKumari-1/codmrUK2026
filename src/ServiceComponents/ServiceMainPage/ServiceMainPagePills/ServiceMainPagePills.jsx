@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import './ServiceMainPagePills.css';
 
 const ServiceMainPagePills = ({ pillLabel, title, description, link }) => {
   const [showCard, setShowCard] = useState(false);
@@ -9,10 +10,10 @@ const ServiceMainPagePills = ({ pillLabel, title, description, link }) => {
   const handleMouseLeave = () => setShowCard(false);
 
   return (
-    <div className="position-relative d-inline-block mx-2">
+    <div className="position-relative d-inline-block mx-2 pb-3">
       {/* Pill */}
       <span
-        className="badge rounded-pill purple-bg px-3 py-2 text-white"
+        className="badge rounded-pill purple-pill-bg px-3 py-2 text-white"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         style={{ cursor: "pointer" }}

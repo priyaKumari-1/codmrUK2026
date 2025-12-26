@@ -35,6 +35,7 @@ const Certifications = [
 
 function NewsletterSection() {
     return (
+        <>
         <section className="section-newsletter pb-120 pt-120 fix position-relative">
             <div className="container-main position-relative fix">
                 <div className="row align-items-center fix text-center position-relative z-1">
@@ -98,7 +99,6 @@ function NewsletterSection() {
                                     placeholder="Enter your mail.."
                                     type="text"
                                     name="name"
-                                    
                                 />
                                 <div className="">
                                     <button
@@ -123,6 +123,7 @@ function NewsletterSection() {
 
             </div>
         </section>
+        </>
     );
 }
 

@@ -7,7 +7,7 @@ import { FaReact } from "react-icons/fa";
 import logo from "../../assets/imgs/template/image17.png";
 import "./Navbar.css";
 import flag1 from '../../assets/imgs/contact-4/Flag of UK.png';
-import flag2 from '../../assets/imgs/contact-4/Flag_of_India.png';
+import flag2 from '../../assets/imgs/contact-4/Flag_of_India.png';  
 import flag3 from '../../assets/imgs/contact-4/Flag_of_the_United_States.png';
 import saalLogo from '../../assets/imgs/template/SaasAi.png';
 import emailIcon from '../../assets/imgs/contact-2/icon-4.svg';
@@ -309,53 +309,36 @@ function Navbar() {
           />
         </div>
         <div className="justify-content-center align-content-center d-none d-lg-block">
-          {/* <img src={emailIcon} alt="Codm" /> */}
-          <span style={{ paddingTop: ".1rem" }}><b>info@codmsoftware.co.uk</b>
-          </span>
-          <div className="d-flex">
+          
+          <div className="d-flex text-center align-items-center">
             <img
             src={flag1}
             alt="UK Flag"
             style={{ width: "15px", height: "13px", marginRight: "6px",paddingTop:"0rem",}}
           />
-          <p className="align-items-center" style={{ fontSize: ".6rem" ,marginBottom:"1px"}}>UK: (+44) 0121 818 6924</p>
+          <p className="align-items-center" style={{ fontSize: ".9rem" ,marginBottom:"1px"}}>UK: (+44) 0121 818 6924</p>
           </div>
           {/*  */}
-          <div className="d-flex">
+          <div className="d-flex align-items-center">
           <img
             src={flag3}
             alt="USA Flag"
             style={{ width: "15px", height: "13px", marginRight: "6px" }}
           />
-          <span className="align-items-center" style={{ fontSize: ".6rem" }}>USA: (+1) 201 623 3132</span>
-          </div>
-          
-          
-        </div>
-        {/* <div className="gap-3 border-none position-absolute end-0 top-0 me-3 d-none d-lg-flex">
-          <img
-            src={flag1}
-            alt="UK Flag"
-            style={{ width: "20px", height: "18px", marginRight: "6px" }}
-          />
-          <p className="align-items-center" style={{ fontSize: ".9rem" }}>UK: (+44) 0121 818 6924</p>
-          <img
-            src={flag3}
-            alt="USA Flag"
-            style={{ width: "20px", height: "18px", marginRight: "6px" }}
-          />
-          <p className="fs-6 align-items-center" style={{ fontSize: ".9rem" }}>USA: (+1) 201 623 3132</p>
-          <img
+          <span className="align-items-center" style={{ fontSize: ".9rem" }}>USA: (+1) 201 623 3132</span>
+          </div>   
+          {/*  */}
+          <div className="d-flex align-items-center p-0">
+            <img
             src={flag2}
-            alt="India Flag"
-            style={{ width: "20px", height: "18px", marginRight: "6px" }}
+            alt="UK Flag"
+            style={{ width: "15px", height: "13px", marginRight: "6px",paddingTop:"0rem",}}
           />
-          <p className="fs-6 align-items-center" style={{ fontSize: ".9rem" }}> India: (+91) 9717116432</p>
-          <div className="border-bottom border-2"></div>
-        </div> */}
+          <p className="align-items-center" style={{ fontSize: ".9rem" ,marginBottom:"1px"}}>India : (+91) 9717116432</p>
+          </div>
+        </div>
       </div>
     </nav>
   );
 }
-
 export default Navbar;

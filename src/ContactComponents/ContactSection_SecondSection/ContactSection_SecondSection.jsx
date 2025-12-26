@@ -104,8 +104,7 @@ const ContactSection_SecondSection = () => {
           alt="UK Flag"
           style={{ width: "28px", height: "20px", marginRight: "6px" }}
         />
-        Spaces - Birmingham, The Mailbox Level 1, The Mailbox,
-        3 Wharfside Street Spaces, Birmingham B1 1RD, UK
+        Regus - Edmund house, 12-22 Newhall St, Birmingham B3 3AS,UK
       </span>
       <br />
 
