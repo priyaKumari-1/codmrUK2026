@@ -1,5 +1,5 @@
 import Hero from '../../components/Hero/Hero'
-import PartnerLogo from '../../components/PartnerLogo/PartnerLogo.JSX'
+// import PartnerLogo from '../../components/PartnerLogo/PartnerLogo.JSX'
 import Hero1 from '../../components/Hero1/Hero1'
 import Hero2 from '../../components/Hero2/Hero2';
 import Hero3 from '../../components/Hero3/Hero3';
@@ -35,7 +35,7 @@ function Home() {
     <>
       <div className='homepageFirstContainer'>
       <Hero />
-      <PartnerLogo/>
+      {/* <PartnerLogo/> */}
       <CarouselSectionCard/>
       <Hero1 />
       </div>
