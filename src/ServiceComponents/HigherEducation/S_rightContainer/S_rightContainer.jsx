@@ -10,7 +10,7 @@ function S_rightContainer() {
         <>
             <div className="mt-5">
                 <NavLink
-    to="/service/marketing-cloud"
+    to="/ItServices/marketing-cloud"
     className={({ isActive }) =>
       `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${
         isActive ? "active" : ""
@@ -28,7 +28,7 @@ function S_rightContainer() {
   </NavLink>
 
   <NavLink
-    to="/service/higher-education"
+    to="/ItServices/higher-education"
     className={({ isActive }) =>
       `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${
         isActive ? "active" : ""
@@ -46,7 +46,7 @@ function S_rightContainer() {
   </NavLink>
 
   <NavLink
-    to="/service/financial-service"
+    to="/ItServices/financial-service"
     className={({ isActive }) =>
       `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${
         isActive ? "active" : ""
@@ -64,7 +64,7 @@ function S_rightContainer() {
   </NavLink>
 
   <NavLink
-    to="/service/data-cloud-ai"
+    to="/ItServices/data-cloud-ai"
     className={({ isActive }) =>
       `ServiceRoutesBtn btn w-100 text-start mb-2 fs-5 py-3 d-flex justify-content-between align-items-center ${
         isActive ? "active" : ""

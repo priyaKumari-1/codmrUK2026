@@ -8,7 +8,7 @@ function Hero1() {
                     <div className="row align-items-center g-4">
                         {/* Left Side: CRM Content */}
                         <div className="col-12 col-md-6">
-                            <h3 className="mb-3 fs-6 fs-sm-2 text-center text-sm-start">What is CRM?</h3>
+                            <h3 className="mb-3 fs-sm-2 text-center text-sm-start Heading3">What is CRM?</h3>
                             <p className="text-gray-600 text-center text-sm-start">
                                 CRM (Customer Relationship Management) is a system that helps
                                 businesses manage customer data, interactions, and relationships

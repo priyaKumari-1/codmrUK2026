@@ -1,4 +1,26 @@
-.SecondSection_RightContainer h2{
+
+.aboutHeading{
+    font-size: 50px;
+    font-weight:700;
+}
+.aboutContainer2{
+    background: rgb(243,244,246);
+}
+p{
+    line-height: 1.7;
+}
+
+@media (max-width: 576px) {
+    .aboutHeading{
+    font-size: 35px;
+    font-weight:700;
+    padding-top: 1rem;
+}
+}
+
+/* ======================================================== */
+
+/* .SecondSection_RightContainer h2{
     font-weight: 600;
 }
 .SecondSection_RightContainer h5{
@@ -6,4 +28,4 @@
 }
 .SecondSection_RightContainer h2{
   color: #7051f3;;
-}
+} */

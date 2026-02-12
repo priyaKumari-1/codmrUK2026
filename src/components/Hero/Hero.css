@@ -4,7 +4,7 @@
       font-family: 'Satoshi', sans-serif;
   }
   .hero-Section{
-    padding-top: 8rem;
+    padding-top: 4rem;
   }
 
   .hero-img {
@@ -21,7 +21,7 @@
     font-weight: 600;
     font-size: 1rem;
     border-radius: 12px;
-    padding: 0.8rem 1.8rem;
+    padding:1.2rem 1.8rem;
     cursor: pointer;
     transition: all 0.3s ease;
     border: .1rem solid gray;
@@ -29,15 +29,18 @@
     color: white;
     border: none;
   }
+  .explorebtn:hover{
+         background-color: #5d3edb;
+         border: none;
+  }
   .agentBtn{
     background-color: #f5eeff;
   }
 
-  .shape-2 {
+.shape-2 {
       top: 40px;
       right: 35px;
-  }
-
+}
 
   /* dark mode functionality */
 

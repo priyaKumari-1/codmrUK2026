@@ -8,6 +8,7 @@ function AgentforceImplementation() {
                   title="Salesforce Agentforce Implementation"
                   breadcrumbs={[
                       { label: "Home", link: "/" },
+                        { label:"Blog",link:"/blog"},
                       { label: "Salesforce Agentforce Implementation", color: "purple-text" }
                   ]}
     />
@@ -15,5 +16,4 @@ function AgentforceImplementation() {
     </>
   )
 }
-
 export default AgentforceImplementation;

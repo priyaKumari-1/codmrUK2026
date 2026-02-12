@@ -31,6 +31,28 @@ const DataCloud_First = () => {
                                     strokeLinejoin="round"
                                 ></path>
                             </svg>
+                             
+             <a href="/ItServices" className="d-flex text-decoration-none black-text">
+              <p className="mb-0 text-900 fw-bold">Services</p>
+            </a>
+
+            <svg
+              className="mx-3 mt-1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="8"
+              height="13"
+              viewBox="0 0 8 13"
+              fill="none"
+            >
+              <path
+                className="stroke-dark"
+                d="M1 1.5L6.5 6.75L1 12"
+                stroke="#111827"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+            </svg>
 
                             <p className="purple-text mb-0 fw-bold">Data Cloud + A.I</p>
 

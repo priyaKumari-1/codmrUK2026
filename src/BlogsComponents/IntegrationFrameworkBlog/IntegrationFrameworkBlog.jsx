@@ -8,6 +8,7 @@ function IntegrationFrameworkBlog() {
                     title="Integration Framework"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
+                        { label:"Blog",link:"/blog"},
                         { label: "Integration Framework", color: "purple-text" }
                     ]}
                 />

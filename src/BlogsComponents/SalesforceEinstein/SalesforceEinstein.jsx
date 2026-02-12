@@ -12,6 +12,7 @@ function SalesforceEinstein() {
                     title="Salesforce Trigger Framework"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
+                        { label:"Blog",link:"/blog"},
                         { label: "Salesforce Trigger Framework", color: "purple-text" }
                     ]}
     />

@@ -1,7 +1,7 @@
 
 import img1 from '../../assets/imgs/Certifications/Admin.png';
 import img2 from '../../assets/imgs/Certifications/ApplicationArchitect.png';
-import img3 from '../../assets/imgs/Certifications/B2C-Solution-Architect.png';
+import img3 from '../../assets/imgs/Certifications/Certified-Agentforce.png';
 import img4 from '../../assets/imgs/Certifications/SFBA.png'; 
 import img5 from '../../assets/imgs/Certifications/CPQ.png';
 import img6 from '../../assets/imgs/Certifications/DataArchitect.png';
@@ -59,7 +59,7 @@ const certificateImages = [
 
 const FourthSection = () => { 
   return (
-    <section className="section-team-4 section-padding position-relative overflow-hidden">
+    <section className="section-team-4 position-relative overflow-hidden pt-5">
       <div className="container">
         {/* Header */}
         <div className="fourthSection_Header text-center">
@@ -94,7 +94,8 @@ const FourthSection = () => {
           ))}
         </div> 
         {/* event section  */}
-        <EventsGallery/>
+        
+        {/* <EventsGallery/> */}
 
         {/* Team Section */}
         {/* <div className="FourthSection_terms row mt-lg-10 mb-4">

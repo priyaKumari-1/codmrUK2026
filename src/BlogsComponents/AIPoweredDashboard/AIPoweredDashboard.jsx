@@ -10,6 +10,7 @@ function AIPoweredDashboard() {
                     title="Salesforce AI-Powered Dashboard"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
+                        { label:"Blog",link:"/blog"},
                         { label: "Salesforce AI-Powered Dashboard", color: "purple-text" }
                     ]}
       />  

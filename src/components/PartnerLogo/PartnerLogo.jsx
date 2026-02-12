@@ -8,7 +8,7 @@ import img7 from '../../assets/imgs/CLI logo/Phase_Trust.png';
 import img6 from '../../assets/imgs/CLI logo/smartestEnergy.png';
 import img8 from '../../assets/imgs/CLI logo/Yamaha-Logo.png';
 
-    
+
 // const logos = [
 //   img1,
 //   img2,
@@ -19,37 +19,42 @@ import img8 from '../../assets/imgs/CLI logo/Yamaha-Logo.png';
 //   img7,
 //   img8
 // ];
+
 const logos = [
   { src: img1, className: "w-120" },
   { src: img2, className: "w-80" },
   { src: img3, className: "w-100" },
-  { src: img4, className: "w-150" },
-  { src: img5, className: "w-110" },
+  { src: img4, className: "w-150"},
+  { src: img5, className: "w-110"},
   { src: img6, className: "w-90" },
-  { src: img7, className: "w-130" },
-  { src: img8, className: "w-160" },
+  { src: img7, className: "w-130"},
+  { src: img8, className: "w-160"},
 ];
 
 const PartnerLogo = () => {
 
-const infiniteLogos = [...logos, ...logos];
+  const infiniteLogos = [...logos, ...logos];
 
   return (
-    <div className="section-logo-cloud container mt-lg-0 border-top border-bottom">
-      <div className="container">
-        <div className="row">
-          <div className="logo-fade position-relative z-1">
-            <div className="logo-track">
-              {infiniteLogos.map((logo, index ) => (
-                <div className="logo-item" key={index}>
-                  <img src={logo.src} alt={`Logo ${index + 1}`} className={logo.className}/>
-                </div>
-              ))}
+    <>
+      <div className="px-5 py-3 container mt-lg-0 border-bottom">
+           <h4 className='text-center Heading3 pb-2'>Our Partners</h4>
+        <div className="container">
+          <div className="row">
+            <div className="logo-fade position-relative z-1">
+
+              <div className="logo-track">
+                {infiniteLogos.map((logo, index) => (
+                  <div className="logo-item" key={index}>
+                    <img src={logo.src} alt={`Logo ${index + 1}`} className={logo.className} />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 export default PartnerLogo;

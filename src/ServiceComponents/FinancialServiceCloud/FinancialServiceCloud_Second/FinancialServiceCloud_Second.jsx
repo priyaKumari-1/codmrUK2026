@@ -16,6 +16,7 @@ import img1 from '../../..//assets/imgs/services-details-2/Financial-Cloud/img-1
 import FinancialServiceAccordionData from '../FinancialServiceAccordionData/FinancialServiceAccordionData';
 import S_rightContainer from '../../HigherEducation/S_rightContainer/S_rightContainer';
 import ServicePageContentSection from '../../ui/ServicePageContentSection/ServicePageContentSection';
+import ServiceSidebar from '../../ServiceSidebar/ServiceSidebar';
 
 
 function FinancialServiceCloud_Second() {
@@ -227,8 +228,8 @@ function FinancialServiceCloud_Second() {
 
                         <div className="col-lg-4 sidebar">
 
-                            {/* <S_rightContainer/> */}
-                            <S_rightContainer />
+                            {/* // <S_rightContainer /> */}
+                            <ServiceSidebar/>
 
                             <div className="zoom-img mt-5 rounded-4">
                                     <img src={img3} className="" width={'100%'}/>

@@ -5,44 +5,57 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import blog1 from "../../../assets/imgs/features-7/img-1.png";
+import projectManagementImg from "../../../assets/imgs/features-7/img-6.jpg";
+import developmentImg from "../../../assets/imgs/features-7/img-2.png";
+import securityImg from "../../../assets/imgs/features-7/img-4.jpg";
+import integrationImg from "../../../assets/imgs/features-7/img3.png";
+import supportImg from "../../../assets/imgs/features-7/img-5.png";
 import { Link } from "react-router-dom";
 import "./ServiceMainBlogSection.css";
 
 const blogData = [
   {
-    image: blog1,
-    category: "Project Management", 
-    title: "Project Management",
+    image: projectManagementImg,
+    category: "Project Management",
+    title: "Salesforce Project Management",
     description:
-      "As the SaaS industry continues to evolve, new trends are shaping the future of software delivery and consumption...",
-    link: "/integrationframework.html",
+      "Structured delivery with agile planning, clear milestones, and full lifecycle project ownership.",
+    link: "/projectmanagement.html",
   },
   {
-    image: blog1,
-    category: "Apex",
-    title: "Mastering Async Apex for Large Scale Systems",
+    image: developmentImg,
+    category: "Development",
+    title: "Scalable Salesforce Development",
     description:
-      "Queueable, Future, Batch, and Scheduled Apex explained for scalable apps.",
+      "High-performance solutions using Async Apex, bulk processing, and scalable system design.",
     link: "/asyncapex.html",
   },
   {
-    image: blog1,
+    image: securityImg,
     category: "Security",
-    title: "Salesforce Shield Encryption Best Practices",
+    title: "Salesforce Shield & Encryption",
     description:
-      "How to secure your org with Platform Encryption, Event Monitoring, and more.",
+      "Protect critical data using platform encryption, event monitoring, and compliance best practices.",
     link: "/shield.html",
   },
   {
-    image: blog1,
-    category: "Security",
-    title: "Salesforce Shield Encryption Best Practices",
+    image: integrationImg,
+    category: "Integration",
+    title: "Salesforce Integrations",
     description:
-      "How to secure your org with Platform Encryption, Event Monitoring, and more.",
-    link: "/shield.html",
-  }
+      "Seamless integration with external systems using secure APIs and enterprise-ready frameworks.",
+    link: "/integrationframework.html",
+  },
+  {
+    image: supportImg,
+    category: "Support",
+    title: "Salesforce Support & Optimization",
+    description:
+      "Ongoing support, performance tuning, and enhancements to maximize Salesforce ROI.",
+    link: "/support.html",
+  },
 ];
+
 
 function ServiceMainBlogSection() {
   return (
@@ -80,7 +93,7 @@ function ServiceMainBlogSection() {
 
         {blogData.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="blogCardCustom bg-white p-4 rounded-2 mb-5">
+            <div className="blogCardCustom bg-white p-4 rounded-2 mb-5" style={{height:"25rem"}}>
               <img src={item.image} className="blogImg" width={'100%'} alt={item.title} />
 
               <div className="blogInfo pt-3">
@@ -90,10 +103,6 @@ function ServiceMainBlogSection() {
 
                 <h5 className="blogTitle">{item.title}</h5>
                 <p className="blogDesc">{item.description}</p>
-
-                <p className="purple-text fw-bold">Read More
-                <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14" fill="none"><path class="fill-dark" d="M17.4177 0.417969L16.3487 1.48705L21.1059 6.24429H0V7.75621H21.1059L16.3487 12.5134L17.4177 13.5825L24 7.0002L17.4177 0.417969Z" fill="black"></path></svg>
-                </p>
               </div>
 
               {/* whole card clickable */}
@@ -103,10 +112,51 @@ function ServiceMainBlogSection() {
         ))}
       </Swiper>
 
-      {/* Navigation buttons */}
+      {/* Navigation buttons
       <div className="swiper-btn-prev swiper-navBtn"></div>
-      <div className="swiper-btn-next swiper-navBtn"></div>
+      <div className="swiper-btn-next swiper-navBtn"></div> */}
     </div>
   );
 }
 export default ServiceMainBlogSection;
+
+
+
+
+
+
+
+
+
+//  {
+//     image: blog1,
+//     category: "Project Management", 
+//     title: "Project Management",
+//     description:
+//       "As the SaaS industry continues to evolve, new trends are shaping the future of software delivery and consumption...",
+//     link: "/integrationframework.html",
+//   },
+  // {
+  //   image: blog1,
+  //   category: "Apex",
+  //   title: "Mastering Async Apex for Large Scale Systems",
+  //   description:
+  //     "Queueable, Future, Batch, and Scheduled Apex explained for scalable apps.",
+  //   link: "/asyncapex.html",
+  // },
+  // {
+  //   image: blog1,
+  //   category: "Security",
+  //   title: "Salesforce Shield Encryption Best Practices",
+  //   description:
+  //     "How to secure your org with Platform Encryption, Event Monitoring, and more.",
+  //   link: "/shield.html",
+  // },
+  // {
+  //   image: blog1,
+  //   category: "Security",
+  //   title: "Salesforce Shield Encryption Best Practices",
+  //   description:
+  //     "How to secure your org with Platform Encryption, Event Monitoring, and more.",
+  //   link: "/shield.html",
+  // }

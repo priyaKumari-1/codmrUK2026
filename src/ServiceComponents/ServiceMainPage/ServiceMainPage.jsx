@@ -11,7 +11,7 @@ import ServiceMainPageSidebar from "./ServiceMainPageSidebar/ServiceMainPageSide
 function ServiceMainPage() {
     return (
         <div className="ServiceMainPageContainer">
-            <Header />
+            <Header/>
             <ServiceMainPageSidebar/>
             <ServiceMainContentpage/>
             <ServiceMainNextComponent/>

@@ -11,6 +11,7 @@ function SalesforceRevenueCloud() {
                     title="Salesforce Revenue Cloud (Previously CPQ)"
                     breadcrumbs={[
                         { label: "Home", link: "/" },
+                          { label:"Blog",link:"/blog"},
                         { label: "Revenue Cloud Advanced", color: "purple-text" }
                     ]}
     />

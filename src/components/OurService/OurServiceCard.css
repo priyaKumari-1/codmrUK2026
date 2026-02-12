@@ -3,9 +3,8 @@
 }
 
 .card-service_container{
-    /* background-color: #696870; */
-    /* padding: 1rem; */
-    
+  padding-bottom: .2rem;
+  padding-top: .1rem;
   background-color: white;
 }
 

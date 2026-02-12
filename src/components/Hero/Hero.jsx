@@ -5,13 +5,15 @@ import { heroSection } from "../../data";
 import ContactUsBtn from "../../utils/ContactUsBtn/ContactUsBtn";
 import AnimatedPill from "./AnimatedPill";
 // import RightSideHeroSection from "./RightSideHeroSection";
-
+import saleforceLogo from '../../assets/imgs/cta-15/saleforce-logo.png';
+import Appexchangelogo from '../../assets/imgs/cta-15/Appexchange_logo.png';
 import { Link } from "react-router-dom";
 
 import "./Hero.css";
 
 function Hero() {
   return (
+    <>
     <section className="hero-Section hero">
       <div className="container heroContainer">
         <div className="row align-items-center">
@@ -21,21 +23,16 @@ function Hero() {
               AgentForce
             </span>
 
-            <h1 className="text-3xl text-md-5xl fw-bold mt-4 leading-tight">
+            <h1 className="Heading3 mt-4">
               {heroSection.HEADING}
             </h1>
-
-            <p className="text-gray-600 mt-4">
-              We deliver enterprise-scale AI solutions with futuristic thinking,
-              helping businesses modernize, streamline, and scale with confidence
-              using cutting-edge cloud and CRM technologies. Our development
-              approach is grounded in SOLID principles, ensuring clean,
-              maintainable, and scalable architecture from day one.
+            <p className="text-sm text-gray-600 mt-4">
+             We deliver enterprise-scale software solutions designed for the future helping businesses modernize, streamline operations, and scale with confidence using advanced cloud and CRM technologies. Our development approach follows SOLID principles, ensuring clean, maintainable, and highly scalable architecture from day one.
             </p>
 
-            <div className="py-4 d-flex gap-3 flex-wrap">
+            {/* <div className="py-4 d-flex gap-3 flex-wrap">
               <Link
-                to="/service"
+                to="/ItServices"
                 className="explorebtn btn-gradient text-decoration-none"
               >
                 Explore Now
@@ -65,12 +62,16 @@ function Hero() {
               </Link>
 
               <ContactUsBtn />
-            </div>
+
+              <img src={saleforceLogo} alt="" width={'15%'} />
+             
+              <img src={Appexchangelogo} alt="" width={'15%'} />
+            </div> */}
           </div>
 
           {/* Right Content */}
           <div className="col-12 col-md-6">
-            {/* <RightSideHeroSection /> */}
+            {/* <RightSideHeroSection />*/}
 
             <div className="rightsidePillSection">
               <div className="animatedPillsContainer">
@@ -116,6 +117,45 @@ function Hero() {
         </div>
       </div>
     </section>
+
+      <div className="container py-4 d-flex gap-3 flex-wrap">
+              <Link 
+                to="/ItServices"
+                className="explorebtn btn-gradient text-decoration-none"
+              >
+                Explore Now
+                <svg
+                  className="ms-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M17.25 15.25V6.75H8.75"
+                    stroke="white"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M17 7L6.75 17.25"
+                    stroke="white"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </Link>
+
+              <ContactUsBtn />
+
+              <img src={saleforceLogo} alt="" width={'16%'} />
+             
+              <img src={Appexchangelogo} alt="" width={'16%'} />
+            </div>
+    </>
   );
 }
 

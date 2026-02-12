@@ -9,75 +9,13 @@ import salesImg from "../../assets/imgs/features-1/Sales.png";
 import cseImg from "../../assets/imgs/features-1/cse.jpg";
 import transportImg from "../../assets/imgs/features-1/trasnport.png";
 
-// const features = [
-//   {
-//     img: oipimg,
-//     alt: "Healthcare",
-//     title: "Healthcare",
-//     desc: "Tailored solutions for healthcare providers.",
-//     cloud:"Health Cloud",
-//     delay: 50,
-//   },
-//   {
-//     img: eduImg,
-//     alt: "Education",
-//     title: "Higher Education",
-//     desc: "Solutions for modern educational institutions.",
-//     cloud:"Health Cloud",
-//     delay: 100,
-//   },
-//   {
-//     img: manuImg,
-//     alt: "Manufacturing",
-//     title: "Manufacturing",
-//     desc: "Digital management systems for manufacturing facilities.",
-//     delay: 200,
-//   },
-//   {
-//     img: financialImg,
-//     alt: "Financial",
-//     title: "Financial Services",
-//     desc: "Corporate solutions for finance professionals.",
-//     delay: 300,
-//   },
-//   {
-//     img: nonprofitImg,
-//     alt: "Nonprofit",
-//     title: "Nonprofit",
-//     desc: "Collaborative technology for nonprofit teams.",
-//     delay: 300,
-//   },
-//   {
-//     img: salesImg,
-//     alt: "Sales Operations",
-//     title: "Sales Operations",
-//     desc: "Cutting edge CRM to boost Sales operations.",
-//     delay: 300,
-//   },
-//   {
-//     img: cseImg,
-//     alt: "Customer Service",
-//     title: "Customer Service",
-//     desc: "Salesforce service cloud solutions to handle cases.",
-//     delay: 300,
-//   },
-//   {
-//     img: transportImg,
-//     alt: "Energy",
-//     title: "Energy, telecommunication and transport",
-//     desc: "Industries cloud provides zero code capabilities.",
-//     delay: 300,
-//   },
-  
-// ];
-
 const features = [
   {
     img: oipimg,
     alt: "Healthcare",
     title: "Healthcare",
     desc: "Tailored solutions for healthcare providers.",
-    cloud: "Health Cloud",
+    cloud: "Health & Insurance Cloud",
     delay: 50,
   },
   {
@@ -138,11 +76,11 @@ const features = [
   },
 ];
 
-
 const Hero2 = () => {
   return (
     <div className="hero2_container container">
-      <div className="row mt-5">
+      <h4 className='text-center pt-lg-5 Heading3'>Industries We Serve</h4>
+      <div className="row mt-5 container">
         {features.map((feature, index) => (
           <div
             className="hero2_cards feature_container col-lg-3 col-md-6 mb-4"

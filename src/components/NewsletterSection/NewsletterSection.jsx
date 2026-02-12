@@ -62,7 +62,7 @@ function NewsletterSection() {
                         </div>
 
                         <Link
-                            href="https://codmsoftware.co.uk/AboutUs.html"
+                            to={"/ItServices"}
                             className="learnMore_btn btn fw-bold px-4 py-2"
                         >
                             Learn More About Our Expertise
@@ -92,7 +92,7 @@ function NewsletterSection() {
                             </p>
 
 
-                            <div className="getInput input-group mb-3 mt-4 position-relative">
+                            <div className="getInput input-group mb-2 mt-4 position-relative">
 
                                 <input
                                     className="inputEmailBtn"
@@ -120,11 +120,9 @@ function NewsletterSection() {
                     <img src={bgLine} alt="Codm"  width={'100%'}/>
                 </div>
 
-
             </div>
         </section>
         </>
     );
 }
-
 export default NewsletterSection;

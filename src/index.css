@@ -70,3 +70,14 @@ font-weight: 600;
   }
 
 }
+
+
+/* css of heading and font  */
+
+.Heading3{
+ color: #111827;
+ font-weight: 700;
+ line-height: 1.2;
+ font-size: 40px;
+ text-transform: unset;
+} 

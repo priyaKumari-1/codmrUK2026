@@ -1,11 +1,12 @@
 .ourExcellence_Container{
     padding-top: 2rem;
-    height: 30rem;
+    height: 33rem;
 }
 .ourExcelence_img{
         transition: 0.3s;
         width: 100%;
 }
+
 /* .ourExcellence_para{
     padding-top: 7rem;
 } */

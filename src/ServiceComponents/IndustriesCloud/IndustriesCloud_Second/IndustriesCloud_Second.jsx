@@ -15,6 +15,7 @@ import checkImg from '../../../assets/imgs/services-details/check.svg';
 
 import S_rightContainer from '../../HigherEducation/S_rightContainer/S_rightContainer';
 import IndustriesCloudAccordionData from '../IndustriesCloudAccordionData/IndustriesCloudAccordionData';
+import ServiceSidebar from '../../ServiceSidebar/ServiceSidebar';
 
 function IndustriesCloud_Second() {
     return (
@@ -199,7 +200,8 @@ function IndustriesCloud_Second() {
 
                         <div className="col-lg-4 sidebar">
 
-                            <S_rightContainer />
+                             {/* <S_rightContainer /> */}
+                            <ServiceSidebar/>
                             
                                <div className="zoom-img mt-5 rounded-4">
                                  <img src={img6} className="" width={'100%'}/>

@@ -18,8 +18,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollOnTop from '../../components/ScrollOnTop/ScrollOnTop'
-import CarouselSectionCard from '../../components/CarouselSection/CarouselSectionCard'
-
+import CarouselSectionCard from '../../components/CarouselSection/CarouselSectionCard';
 
 function Home() {
   useEffect(() => {

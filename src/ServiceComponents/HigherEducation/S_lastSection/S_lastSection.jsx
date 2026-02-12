@@ -4,11 +4,11 @@ import emailIcon from '../../../assets/imgs/contact-2/icon-4.svg';
 import phoneIcon from '../../../assets/imgs/contact-2/icon-5.svg';
 const S_lastSection = () => {
     return (
-        <section className="S_lastSectionConatiner position-relative section-padding bg-5 mt-5">
+        <section className="S_lastSectionConatiner position-relative p-lg-5 p-2 mt-5">
             <div className="container position-relative z-1">
-                {/* Heading */}
+
                 <div className="S_lastSectionDiv text-center">
-                    <h5>
+                    <h5 className=''>
                         Thinking about a project? <br className="d-md-block d-none" />
                         Get in touch with us.
                     </h5>
@@ -24,7 +24,9 @@ const S_lastSection = () => {
                             {/* Form Section */}
                             <div className="S_lastSectionForm col-lg-6 ps-lg-0 pb-5 pb-lg-0">
                                 <h4>Leave a message</h4>
-                                <form action="https://formsubmit.co/info@codmsoftware.co.uk" method="post">
+                                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgD000000rsAL" method="post">
+                                    <input type="hidden" name="oid" value="00DgD000000rsAL" />
+                                    <input type="hidden" name="retURL" value="https://codmsoftware.co.uk/SalesforceCRM.html" />
                                     <div className="row mt-5">
                                         {/* Name */}
                                         <div className="col-md-6">
@@ -40,30 +42,13 @@ const S_lastSection = () => {
                                                     placeholder="Your name *"
                                                     aria-label="username"
                                                     type="text"
-                                                    name="name"
+                                                    name="first_name"
+                                                    required
                                                 />
                                             </div>
                                         </div>
 
                                         {/* Email */}
-                                        <div className="col-md-6">
-                                            <div className="input-group custom-input-group rounded-2">
-                                                <div className="icon-input ps-3">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                        <path d="M8.89286 4.75H6.06818C5.34017 4.75 4.75 5.34017 4.75 6.06818C4.75 13.3483 10.6517 19.25 17.9318 19.25C18.6598 19.25 19.25 18.6598 19.25 17.9318V15.1071L16.1429 13.0357L14.5317 14.6468C14.2519 14.9267 13.8337 15.0137 13.4821 14.8321C12.8858 14.524 11.9181 13.9452 10.9643 13.0357C9.98768 12.1045 9.41548 11.1011 9.12829 10.494C8.96734 10.1537 9.06052 9.76091 9.32669 9.49474L10.9643 7.85714L8.89286 4.75Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                                    </svg>
-                                                </div>
-                                                <input
-                                                    className="form-control border-0 shadow-none"
-                                                    placeholder="info@"
-                                                    aria-label="email"
-                                                    type="text"
-                                                    name="name"
-                                                />
-                                            </div>
-                                        </div>
-
-                                        {/* Phone */}
                                         <div className="col-md-6">
                                             <div className="input-group custom-input-group rounded-2">
                                                 <div className="icon-input ps-3">
@@ -74,14 +59,33 @@ const S_lastSection = () => {
                                                 </div>
                                                 <input
                                                     className="form-control border-0 shadow-none"
-                                                    placeholder="Phone"
-                                                    aria-label="phone"
-                                                    type="text"
-                                                    name="Phone"
+                                                    placeholder="info@ *"
+                                                    aria-label="email"
+                                                    type='email'
+                                                    name="email"
+                                                    required
                                                 />
                                             </div>
                                         </div>
 
+                                        {/* Phone */}
+                                        <div className="col-md-6">
+                                            <div className="input-group custom-input-group rounded-2">
+                                                <div className="icon-input ps-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M8.89286 4.75H6.06818C5.34017 4.75 4.75 5.34017 4.75 6.06818C4.75 13.3483 10.6517 19.25 17.9318 19.25C18.6598 19.25 19.25 18.6598 19.25 17.9318V15.1071L16.1429 13.0357L14.5317 14.6468C14.2519 14.9267 13.8337 15.0137 13.4821 14.8321C12.8858 14.524 11.9181 13.9452 10.9643 13.0357C9.98768 12.1045 9.41548 11.1011 9.12829 10.494C8.96734 10.1537 9.06052 9.76091 9.32669 9.49474L10.9643 7.85714L8.89286 4.75Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <input
+                                                    className="form-control border-0 shadow-none"
+                                                    placeholder="Phone *"
+                                                    aria-label="phone"
+                                                    type="text"
+                                                    name="Phone"
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
 
                                         {/* Subject */}
                                         <div className="col-md-6">
@@ -121,7 +125,7 @@ const S_lastSection = () => {
                                         </div>
                                         {/* Submit Button */}
                                         <div className="col-12 hover-up sendBtn">
-                                            <button type="submit" className="customHoveBg btn purple-bg mt-4 p-3 hover-up">
+                                            <button type="submit" name="submit" className="customHoveBg btn purple-bg mt-4 p-3 hover-up">
                                                 Send Message
                                                 <svg className="ms-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M21.1059 12.2562H0.5V11.7443H21.1059H22.313L21.4594 10.8907L17.0558 6.48705L17.4177 6.12508L23.2929 12.0002L17.4177 17.8754L17.0558 17.5134L21.4594 13.1098L22.313 12.2562H21.1059Z" fill="black" stroke="white" />
@@ -139,7 +143,7 @@ const S_lastSection = () => {
                                     <p className="text-500">The support team is always available 24/7</p>
                                     <div className="ContactInfoImg d-flex mb-2">
                                         <img src={whatsappIcon} alt="Codm" />
-                                        <a className="ms-2 text-decoration-underline text-900 fs-7 black-text" href="https://wa.me/+4407436934216">
+                                        <a className="ms-2 text-decoration-underline text-900 fs-7 black-text" href="https://wa.me/+4407436934216" target="_blank">
                                             Chat via Whatsapp
                                         </a>
                                     </div>
@@ -157,7 +161,7 @@ const S_lastSection = () => {
                                     <p className="text-500">Reach out for immediate assistance</p>
                                     <div className="d-flex mb-2">
                                         <img src={phoneIcon} alt="Codm" />
-                                        <a className="ms-2 text-decoration-underline text-900 fs-7 black-text" href="#">
+                                        <a className="ms-2 text-decoration-underline text-900 fs-7 black-text" href="tel:(+44) 0121 818 6924">
                                             (+44) 0121 818 6924
                                         </a>
                                     </div>

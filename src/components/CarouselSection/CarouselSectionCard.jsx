@@ -1,16 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './CarouselSectionCard.css';
-import finance from '../../assets/imgs/Carousel/finance1.jpg';
-import img2 from '../../assets/imgs/Carousel/ngo.jpg';
-import educationImg from '../../assets/imgs/Carousel/educationImg.jpg';
+import Energy from '../../assets/imgs/Carousel/Energy.avif';
+import img2 from '../../assets/imgs/Carousel/ngo.png';
+// import educationImg from '../../assets/imgs/Carousel/educationImg.jpg';
+import educationImg from '../../assets/imgs/Carousel/education.jpg';
 
 export default function CarouselSectionCard() {
   return (
     <div
       id="carouselExampleCaptions"
       className="carousel slide"
-      data-bs-ride="carousel" 
+      data-bs-ride="carousel"
       data-bs-interval="3000"
     >
       {/* Indicators */}
@@ -48,13 +49,13 @@ export default function CarouselSectionCard() {
 
         <div className="carousel-item">
           <img
-            src={finance}
+            src={Energy}
             className="d-block w-100 carousel-img"
             alt="Slide 3"
           />
           <div className="carousel-caption custom-caption">
-            <h5>Driving Growth with Smart Finance</h5>
-            <p>Our technology enables secure, scalable, and innovative financial solutions</p>
+            <h5>Powering the Future of Energy</h5>
+            <p>Partnering with energy and utility providers to modernize operations, enhance customer experiences, and accelerate the transition to sustainable energy</p>
           </div>
         </div>
 

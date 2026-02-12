@@ -3,21 +3,21 @@ import FlipImgwithContent from '../../../BlogsComponents/ui/FlipImgwithContent/F
 import icon1 from '../../../assets/imgs/service-4/icon-1.svg';
 import icon2 from '../../../assets/imgs/service-4/icon-2.svg';
 import ServiceMainPagePills from '../ServiceMainPagePills/ServiceMainPagePills';
-
+import { salesforceServices } from '../../../data/salesforceServices';
 function SalesforceCrm() {
-      const items = [
-            {
-                icon: icon1,
-                title: "Research planning",
-                description:
-                    "Analyzing your current CRM structure to identify areas for automation and data-driven insights"
-            },
-            {
-                icon: icon2,
-                title: "Investment",
-                description:
-                    "Expert implementation ensures increased productivity and maximum ROI from your Salesforce platform"
-            }]
+  const items = [
+    {
+      icon: icon1,
+      title: "Research planning",
+      description:
+        "Analyzing your current CRM structure to identify areas for automation and AI-driven insights."
+    },
+    {
+      icon: icon2,
+      title: "Investment",
+      description:
+        " 12 years CRM industries experience in implementating the Salesforce CRMs helps in maximizing your teams productivity resulting in higher revenue. "
+    }]
   return (
     <>
       <div className="row rounded-3 bg-white">
@@ -30,62 +30,97 @@ function SalesforceCrm() {
           />
         </div>
 
-        <div className="col-lg-7"> 
+        <div className="col-lg-7">
           <div className="p-lg-3">
             <h3 className="fw-regular">
-              Empower Your Business <p> with <span className="fw-bold">Salesforce CRM</span> </p>
+              Empower Your Business <p> with AI-powered<span className="fw-bold"> Salesforce CRM</span> </p>
             </h3>
             <p className='custom-p'>
-              We customize and optimize Salesforce to fit your unique business
+              <b className='text-black'>At CODM,</b> we help businesses to customize and configure Salesforce CRM experience to business
               needs enhancing automation, reporting, and customer engagement through
-              tailored CRM solutions.
+              tailored AI-enabled CRM solutions.
             </p>
 
-            <div> 
-                <FlipImgwithContent items={items}/>
+            <div>
+              <FlipImgwithContent items={items} />
             </div>
           </div>
 
         </div>
 
 
-         {/* Pills section */}
+        {/* Pills section */}
 
-          <h3>Service</h3>
+        <h3>Salesforce Industries Cloud CRMs </h3>
 
-            {/* <div className='d-flex flex-wrap pb-5'> */}
-            <div className='pb-5 d-flex flex-wrap'>
+        <div className="d-flex flex-wrap">
+          {salesforceServices.map((service) => (
+            <ServiceMainPagePills
+              key={service.link}
+              pillLabel={service.pillLabel}
+              title={service.title}
+              description={service.description}
+              link={service.link}
+            />
+          ))}
+        </div>
+        {/* <div className=' d-flex flex-wrap'>
             <ServiceMainPagePills 
-             pillLabel="Higher Education"
-             title="Higher Education"
+             pillLabel="Salesforce Education Cloud"
+             title="Salesforce Education Cloud"
              description="Salesforce Education Cloud is a unified platform designed specifically"
-             link="/service/higher-education"
+             
+             link="/ItServices/salesforce-education-cloud"
             />
              <ServiceMainPagePills 
-             pillLabel="Financial Service"
-             title="Financial Service"
+             pillLabel="Salesforce Financial Services"
+             title="Salesforce Financial Services"
              description="Salesforce Financial Services Cloud (FSC) is a purpose-built CRM platform"
-             link="/service/financial-service"
+             link="/ItServices/salesforce-financial-services"
             />
-             <ServiceMainPagePills 
-             pillLabel="Industries Cloud"
-             title="Industries Cloud"
-             description="At Codm Software UK, we help businesses across the UK accelerate"
-             link="/service/industries-cloud"
+             <ServiceMainPagePills                      
+             pillLabel="Salesforce Health & Insurance Cloud"
+             title="Salesforce Health & Insurance Cloud"
+             description="Salesforce Health and Insurance Cloud, prebuilt CRM for the healthcare industries"
+             link="/ItServices/salesforce-health&insurance-cloud"
             />
             <ServiceMainPagePills 
-             pillLabel="Data Cloud + A.I"
-             title="Data Cloud + A.I"
-             description="Empower your institution with the next generation of AI and real-time data"
-             link="/service/data-cloud-ai"
+             pillLabel="Salesforce Data Cloud"
+             title=" Salesforce Data Cloud"
+             description="Empower your digital applications with the next generation of AI and real-time data"
+             link="/ItServices/salesforce-data-cloud"
             />
              <ServiceMainPagePills 
-             pillLabel="Marketing Cloud"
-             title="Marketing Cloud"
+             pillLabel="Salesforce Marketing Cloud"
+             title="Salesforce Marketing Cloud"
              description="Salesforce Marketing Cloud is a comprehensive digital marketing platform designed to"
-             link="/service/marketing-cloud"
+             link="/ItServices/saleforce-marketing-cloud"
             />
-            </div>
+             <ServiceMainPagePills 
+             pillLabel="Salesforce Sales Cloud"
+             title="Salesforce Sales Cloud"
+             description="Salesforce Sales Cloud is a unified platform designed specifically for Sales reps"
+             link="/ItServices/salesforce-sales-cloud"
+            />
+              <ServiceMainPagePills 
+             pillLabel="Salesforce Service Cloud"
+             title="Salesforce Service Cloud"
+             description="Salesforce Service Cloud is a unified platform designed for Digital Support teams"
+             link="/ItServices/salesforce-service-cloud"
+            />
+             <ServiceMainPagePills 
+             pillLabel="Salesforce Energy and Utilities Cloud"
+             title="Salesforce Energy and Utilities Cloud"
+             description="Industry-specific solution for utilities, retail energy, and modern energy services companies"
+             link="/ItServices/salesforce-energy-utilities-cloud"
+            />
+             <ServiceMainPagePills 
+             pillLabel="Salesforce Manufacturing Cloud"
+             title="Salesforce Manufacturing Cloud"
+             description="Industry-specific solution increasing collaboration and transparency between sales, operations, and partners."
+             link="/ItServices/salesforce-manufacturingcloud"
+            />
+            </div> */}
       </div>
     </>
   );

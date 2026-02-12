@@ -34,7 +34,7 @@ function ApiIntegrationTab() {
         <div className="col-lg-7">
           <div className="p-lg-3">
             <h3 className="fw-normal">
-            Connect Your <span className="fw-bold">Ecosystem Seamlessly</span>
+            Connect Your <span className="fw-bold">Ecosystem Seamlessly Api</span>
             </h3>
 
             <p className="custom-p">

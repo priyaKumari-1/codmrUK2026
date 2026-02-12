@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation, BrowserRouter } from "react-router-dom";
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
@@ -30,7 +30,23 @@ import AgentforceImplementation from './BlogsComponents/AgentforceImplementation
 import SalesforceEinstein from './BlogsComponents/SalesforceEinstein/SalesforceEinstein';
 import SalesforceRevenueCloud from './BlogsComponents/SalesforceRevenueCloud/SalesforceRevenueCloud';
 import SalesforcePartnerLogo from './components/SalesforcePartnerLogo/SalesforcePartnerLogo';
-import NavbarTest from './components/Navbar/NavbarTest/NavbarTest';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
+import ReactChangeLoader from './RouteChangeLoader';
+import AgentforceFinancialServices from './BlogsComponents/AgentforceFinancialServices/AgentforceFinancialServices';
+import HealthInsuranceCloud from './ServiceComponents/HealthInsuranceCloud/HealthInsuranceCloud';
+import SalesCloud from './ServiceComponents/SalesCloud/SalesCloud';
+import ServiceCloud from './ServiceComponents/ServiceCloud/ServiceCloud';
+import EnergyUtilitiesCloud from './ServiceComponents/EnergyUtilitiesCloud/EnergyUtilitiesCloud';
+import ManufacturingCloud from './ServiceComponents/ManufacturingCloud/ManufacturingCloud';
+import ScrollToTop from './ScrollToTop/ScrollToTop';
+import DeploymentSupport from './ServiceComponents/DeploymentSupport/DeploymentSupport';
+import PoliciesBar from './pages/PoliciesBar/PoliciesBar';
+import Cookies from './Cookies/Cookies';
+import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
+import TermsAndConditions from './TermsAndConditions/TermsAndConditions';
+import NonprofitCloud from './ServiceComponents/NonprofitCloud/NonprofitCloud';
+import AgentforceAI from './BlogsComponents/AgentforceAI/AgentforceAI';
+
 
 
 function App() {
@@ -45,55 +61,125 @@ function App() {
 
   return (
     <>
-      <ScrollOnTop/>
-      <SalesforcePartnerLogo/>
+      <ScrollOnTop />
+      useAutoRefresh()
+
       <Router>
-        {/* <Navbar /> */}
-        <NavbarTest/>
+         <ScrollToTop/>
+        <Navbar />
         <div>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-
-            {/* service routes */}
-            <Route path="/service" element={<Service/>} />
-            <Route path='/service/higher-education' element={<HigherEducation />} />
-            <Route path='/service/Financial-Service' element={<FinancialServiceCloud />} />
-            <Route path="/service/industries-cloud" element={<IndustriesCloud/>} />
-            <Route path="/service/data-cloud-ai" element={<DataCloud/>} />
+          <ReactChangeLoader>
             
-            <Route path="/service/marketing-cloud" element={<MarketingCloud/>} />
+        {/* <SalesforcePartnerLogo/> */}
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
+              <Route path='/terms-conditions' element={<TermsAndConditions/>}/>
 
-            {/* Data */}
-            <Route path="/service/api-integration" element={<ApiIntegration/>} />
-            <Route path="/service/data-integration" element={<DataIntegration />} />
-            <Route path="/service/data-migration" element={<DataIntegration />} />
+              {/* service routes */}
+              <Route path="/ItServices" element={<Service />} />
 
-            {/* Development */}
-          <Route path="/service/SalesforceCRM" element={<CRMDevelopment/>} />
-           <Route path="/service/BuildingLLM" element={<BuildingLLMDevelopment />} />
-           <Route path="/service/DotNetApplication" element={<DotNetApplication />} />
-           <Route path="/service/React-Application" element={<ReactApplication/>} />
-           <Route path="/service/python-Application" element={<PythonApplication />} />
+              <Route path="/ItServices" element={<Service />} />
 
-            {/* Support */}
-            <Route path="/service/Technical-Support" element={<TechnicalSupport/>} />
+              <Route
+                path="/ItServices/salesforce-education-cloud"
+                element={<HigherEducation />}
+              />
 
+              <Route
+                path="/ItServices/salesforce-financial-services"
+                element={<FinancialServiceCloud />}
+              />
 
-            {/* Blog routes*/}
-            {/* <Route path="blog" element={<Blog />}> */}
+              <Route
+                path="/ItServices/salesforce-health-insurance-cloud"
+                element={<HealthInsuranceCloud/>}
+              />
+
+              <Route
+                path="/ItServices/salesforce-data-cloud"
+                element={<DataCloud />}
+              />
+
+              <Route
+                path="/ItServices/saleforce-marketing-cloud"
+                element={<MarketingCloud />}
+              />
+
+              <Route
+                path="/ItServices/salesforce-sales-cloud"
+                element={<SalesCloud/>}
+              />
+              
+              <Route
+                path="/ItServices/salesforce-service-cloud"
+                element={<ServiceCloud/>}
+              />
+ 
+              <Route
+                path="/ItServices/salesforce-energy-utilities-cloud"
+                element={<EnergyUtilitiesCloud/>}
+              />
+
+              <Route
+                path="/ItServices/salesforce-manufacturing-cloud"
+                element={<ManufacturingCloud/>}
+              />
+              {/* salesforce-nonprofit-cloud */}
+              <Route
+               path="/ItServices/salesforce-nonprofit-cloud"
+                element={<NonprofitCloud/>}/>
+
+              {/* previce routes */}
+
+             {/* <Route path='/ItServices/higher-education' element={<HigherEducation />} />
+             <Route path='/ItServices/Financial-Service' element={<FinancialServiceCloud />} />
+             <Route path="/ItServices/industries-cloud" element={<IndustriesCloud/>} />
+             <Route path="/ItServices/data-cloud-ai" element={<DataCloud/>}/>
+             
+             <Route path="/ItServices/marketing-cloud" element={<MarketingCloud/>}/> */}
+
+              {/* Data */}
+              <Route path="/ItServices/api-integration" element={<ApiIntegration />}/>
+              <Route path="/ItServices/data-integration" element={<DataIntegration />}/>
+              <Route path="/ItServices/data-migration" element={<DataIntegration />}/>
+
+              {/* Development */}
+              <Route path="/ItServices/SalesforceCRM" element={<CRMDevelopment />} />
+              <Route path="/ItServices/BuildingLLM" element={<BuildingLLMDevelopment />} />
+              <Route path="/ItServices/DotNetApplication" element={<DotNetApplication />} />
+              <Route path="/ItServices/React-Application" element={<ReactApplication />} />
+              <Route path="/ItServices/python-Application" element={<PythonApplication />} />
+
+              {/* Support */}
+              <Route path="/ItServices/Technical-Support" element={<TechnicalSupport />} />
+              <Route path="/ItServices/Deployment-Support" element={<DeploymentSupport/>} />
+
+              {/* Blog routes*/}
+              <Route path="blog" element={<Blog />} />
               <Route path="/blog/integration-framework" element={<IntegrationFrameworkBlog />} />
-              <Route path="/blog/trigger-framework" element={<TriggerframeworkBlog/>}/>
-              <Route path="/blog/AI-Powered-Dashboard" element={<AIPoweredDashboard/>}/>
-              <Route path="/blog/salesforceagentforce" element={<AgentforceImplementation/>}/>
-              <Route path="/blog/Salesforce-Einstein" element={<SalesforceEinstein/>}/>
-              <Route path="/blog/Salesforce-Revenue-Cloud" element={<SalesforceRevenueCloud/>}/>
+              <Route path="/blog/trigger-framework" element={<TriggerframeworkBlog />} />
+              <Route path="/blog/AI-Powered-Dashboard" element={<AIPoweredDashboard />} />
+              <Route path="/blog/salesforceagentforce" element={<AgentforceImplementation />} />
+              <Route path="/blog/Salesforce-Einstein" element={<SalesforceEinstein />} />
+              <Route path="/blog/Salesforce-Revenue-Cloud" element={<SalesforceRevenueCloud />} />
+              <Route path="/blog/AgentforceFinancialServices" element={<AgentforceFinancialServices />} />
+              <Route path="/blog/AgentforceAI" element={<AgentforceAI/>} />
+              
+              
               {/* </Route> */}
-            <Route path="/contact" element={<Contact />}/>
-          </Routes>
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<PageNotFound />} />
+
+            </Routes>
+          </ReactChangeLoader>
         </div>
         <Footer />
+        <PoliciesBar/>
+        <Cookies/>
       </Router>
+
     </>
   )
 }

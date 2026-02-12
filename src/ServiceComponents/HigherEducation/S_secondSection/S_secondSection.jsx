@@ -10,6 +10,7 @@ import S_thirdSection from '../S_thirdSection/S_thirdSection';
 import S_rightContainer from '../S_rightContainer/S_rightContainer';
 
 import img3 from '../../../assets/imgs/services-details-2/Education-Cloud/img-4.png';
+import ServiceSidebar from '../../ServiceSidebar/ServiceSidebar';
 
 function S_secondSection() {
   return (
@@ -79,7 +80,7 @@ function S_secondSection() {
 
 
               <h4 className="pt-4 border-top mb-3 mt-5">What is Salesforce Education Cloud?</h4>
-              <p className='mb-4'>Salesforce Education Cloud is a unified platform designed specifically for educational institutions to manage the entire student lifecycle—from recruitment and admissions to student success, alumni engagement, and beyond. Built on the robust Salesforce platform, Education Cloud enables institutions to deliver connected and personalized experiences across every touchpoint in a student's journey.Whether you're a K-12 school, college, or global university, Education Cloud helps you stay ahead by integrating data, automating workflows, and enhancing engagement at scale.</p>
+              <p className='mb-4'>Salesforce Education Cloud is a unified platform designed specifically for educational institutions to manage the entire student lifecycle from recruitment and admissions to student success, alumni engagement, and beyond. Built on the robust Salesforce platform, Education Cloud enables institutions to deliver connected and personalized experiences across every touchpoint in a student's journey.Whether you're a K-12 school, college, or global university, Education Cloud helps you stay ahead by integrating data, automating workflows, and enhancing engagement at scale.</p>
 
               {/* content */}
 
@@ -214,7 +215,8 @@ function S_secondSection() {
               {/* sidebar will come here */}
            <div className="col-lg-4 sidebar">
 
-        <S_rightContainer/>
+        {/* <S_rightContainer/> */}
+        <ServiceSidebar/>
          
          
          <div className="zoom-img mt-5 rounded-4">

@@ -9,28 +9,32 @@ const BlogFormSection = ({
       <div className="container position-relative z-1">
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            <h2 className="mb-4 text-center" style={{fontWeight:700}}>{heading}</h2>
+            <h2 className="mb-4 text-center" style={{ fontWeight: 700 }}>{heading}</h2>
             <h4 className="mb-5">{subHeading}</h4>
-
             {/* Form */}
-            <form>
+
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgD000000rsAL" method="POST">
+
+              <input type="hidden" name="oid" value="00DgD000000rsAL"/>
+              <input type="hidden" name="retURL" value="https://codmsoftware.co.uk/SalesforceCRM.html" />
+
               <div className="row g-4">
                 {/* Name */}
                 <div className="col-md-4">
-                  <div className="form-group">
+                  <div className="form-group border">
                     <input
                       id="name"
                       placeholder="Enter your name"
                       required
                       type="text"
-                      name="name"
+                      name="first_name"
                     />
                   </div>
                 </div>
 
                 {/* Email */}
                 <div className="col-md-4">
-                  <div className="form-group">
+                  <div className="form-group border">
                     <input
                       id="email"
                       placeholder="info@"
@@ -43,7 +47,7 @@ const BlogFormSection = ({
 
                 {/* Website */}
                 <div className="col-md-4">
-                  <div className="form-group">
+                  <div className="form-group border">
                     <input
                       id="website"
                       placeholder="https://yourwebsite.com"
@@ -59,9 +63,9 @@ const BlogFormSection = ({
                     <textarea
                       className="form-control"
                       id="comment"
-                      name="comment"
                       placeholder="Describe Your Project in Short"
                       rows="4"
+                      name="description"
                       required
                     />
                   </div>

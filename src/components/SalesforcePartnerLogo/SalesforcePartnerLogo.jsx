@@ -1,4 +1,5 @@
-import SalesForceLogo from '../../assets/imgs/template/salesforcePartner_logo.png';
+// import SalesForceLogo from '../../assets/imgs/template/salesforcePartner_logo.png';
+import SalesForceLogo from '../../assets/imgs/template/saleforcePartnerlogo.png';
 import './SalesforcePartnerLogo.css';
 
 function SalesforcePartnerLogo() {

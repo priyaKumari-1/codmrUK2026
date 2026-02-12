@@ -8,7 +8,7 @@ import './FifthSection.css';
 
 function FifthSection() {
   return (
-    <section className="FifthSection_Container">
+    <section className="FifthSection_Container pt-5">
       <div className="container">
         {/* Header Row */}
         <div className="row align-items-end ">
@@ -39,7 +39,7 @@ function FifthSection() {
             //   className="ms-md-5 fw-bold text-decoration-none"
               style={{ color: "#8065f4" }}
             >
-              See all articles
+              See all Blogs
               <svg
                 className="ms-2"
                 xmlns="http://www.w3.org/2000/svg"

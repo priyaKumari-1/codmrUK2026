@@ -26,9 +26,9 @@ function ContactSection_ThirdSection() {
                             Thinking about a project? Get in touch with us.
                         </h5>
                         <span className="contactThird_leftSpan text-white fw-medium">
-                            Please let us know if you have a question, want to leave{" "}
+                            Please let us know if you have a question, want to leave 
                             <br className="d-none d-lg-block" />
-                            a comment, or would like further information about{" "}
+                            a comment, or would like further information about 
                             <br className="d-none d-lg-block"/>
                             Infinia System
                         </span>
@@ -80,7 +80,6 @@ function ContactSection_ThirdSection() {
                             <div className="position-relative z-2 p-md-5 p-lg-8 rounded-3 purple-bg">
                                 <h3 class="text-white">Get in touch</h3>
                                 <p class="text-white">Do you want to know more or contact our sales department?</p>
-
 
                                 {/* form */}
                                 <div className="S_lastSectionForm ps-lg-0 pb-5 pb-lg-0 container-fluid">

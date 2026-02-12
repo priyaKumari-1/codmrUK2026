@@ -13,7 +13,7 @@ const ThirdSection = () => {
         <div className="text-center">
           <h5 className="">Our Core Values</h5>
           <p className="fs-5 pb-4 fw-medium">
-            We break down barriers so teams can focus on what matters - working
+            We break down barriers so teams can focus on what matters working
             together <br className="d-none d-lg-block" />
             to create products their customers love.
           </p>

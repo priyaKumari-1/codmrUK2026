@@ -46,8 +46,11 @@ export default function Testimonial() {
   }, []);
 
   return (
+    <>
+    <h3 className="text-center Heading3">What Our Clients Say</h3>
     <div className="carousel">
       <div className="carousel-track">
+       
         {cards.map((card, i) => {
           let offset = i - activeIndex;
 
@@ -91,6 +94,7 @@ export default function Testimonial() {
         })}
       </div>
     </div>
+    </>
   );
 }
 

@@ -13,10 +13,10 @@ export default function ServiceMainPageSidebar() {
 
   const tabs = [
     { id: "salesforce", label: "Salesforce CRM" },
-    { id: "react", label: "React Integration" },
+    { id: "react", label: "React Web Applications" },
     { id: "api", label: "API Integration" },
     { id: "data", label: "Data Integration/Migration" },
-        { id: "dotnet", label: ".NET Application" },
+    { id: "dotnet", label: ".NET Application" },
     { id: "support", label: "Technical Support" },
   ];
 

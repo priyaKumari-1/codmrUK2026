@@ -1,17 +1,78 @@
-
-.about_first_section{
-    padding-top: 10%;
+.aboutFirstSection{
+    line-height: 1.9;
 }
-.about_first_section .about_heading{
+.aboutContainerbg{
+    background-color: rgb(163,140,255);
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+.about_first_section{
+    padding-top: 8%;
+}
+.rotating-img img{
+    animation: spin 12s linear infinite;
+}
+
+@keyframes spin{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotationdiv{
+    position: absolute;
+    right: -15rem;
+    top: -335px;
+    overflow-y: hidden;
+}
+
+@media (max-width: 576px) {
+    .about_first_section{
+    padding-top: 30%;
+}   
+.rotationdiv{
+    position: absolute;
+    right: -23rem;
+    top: -616px;
+    overflow-y: hidden;
+}
+.aboutLogoContainer{
+    display: none;
+}
+.aboutLogoContainer img{
+    width: 20%;
+}
+}
+
+
+@media (max-width: 576px) {
+    .about_first_section{
+    padding-top: 40%;
+}   }
+
+@media (max-width:991px){
+ .img-center {
+  display: flex;
+  justify-content: center;
+}
+
+}
+
+/* ==================================================================================== */
+
+/* .about_first_section .about_heading{
     font-size: 64px;
     text-align: center;
     font-weight: 400;
-    /* color: #111827; */
 }
 
 .first_section_bgImgs{
     width: 100%;
-    height: 100%;
+    height: 80vh;
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -20,8 +81,8 @@
 }
 .rotate-center{
    background:#64e1b0;
-    top: -20%;
-    left: 10%;
+    bottom: -50%;
+    right: -50%;
     width: 419.259px;
     height: 842.878px;
     border-radius: 842.878px;
@@ -30,7 +91,6 @@
     animation: rotate-center 15s linear infinite;
 }
 
-/* second */  
 .rotate-center-rev{
      top: -20%;
     right: 10%;
@@ -52,7 +112,6 @@
   }
 }
 
-/* img */
 .img-container{
     gap: 1rem;
     margin-top: 6rem;
@@ -65,9 +124,6 @@
 body.dark-mode .img-container img {
     border: 3px solid black
 }
-
-
-/* responsive */
 
 @media (max-width: 578px) {
   
@@ -86,4 +142,4 @@ body.dark-mode .img-container img {
   .img-container img {
     width: 80% !important; 
   }
-}
+} */

@@ -3,11 +3,12 @@ import img1 from "../../assets/imgs/features-3/img-1.png";
 import { Link, NavLink } from "react-router-dom";
 import './Hero4.css';
 import CountUp from "../../utils/CountUp/CountUp";
+import FreeQuote from "./FreeQuote";
 
 function Hero4() {
   return (
     <section>
-      <div className="Hero4_container container-fluid position-relative section-padding">
+      <div className="Hero4_container container-fluid position-relative section-padding py-lg-5 px-lg-5 pb-5">
         <div className="container">
           <div className="row align-items-start">
             {/* Left Image */}
@@ -27,17 +28,17 @@ function Hero4() {
             {/* Right Content */}
             <div className="col-lg-6">
               <div className="ps-lg-5 hero4_rightContainer">
-                <h3 data-aos="fade-zoom-in" data-aos-delay="100">
+                <h6 className="hero4_righth6" data-aos="fade-zoom-in" data-aos-delay="100">
                   Our vision
-                </h3>
-                <h1
+                </h6>
+                <h6
                   className="hero4_Heading ds-3 mt-2 mb-5"
                   data-aos="fade-zoom-in"
                   data-aos-delay="200"
                 >
                   Driven by<br /> Innovation.<br /> Focused on <br />Impact.
-                </h1>
-                <p className="mb-5">
+                </h6>
+                <p className="mb-5 custom-p">
                   Our vision is to revolutionize the digital world by creating ai driven, scalable, and user-friendly technology that empowers businesses and enriches lives globally.
                 </p>
 
@@ -46,11 +47,12 @@ function Hero4() {
                 align-items-center align-items-sm-center 
                 justify-content-center justify-content-sm-start 
                 text-center text-sm-start
-                pb-4 border-bottom gap-3">
+                pb-4 border-bottom gap-3 pb-lg-5">
 
-                  <NavLink
+                  {/* <button
                     to="/contact"
                     className="explorebtn btn-gradient d-flex align-items-center text-decoration-none"
+                     
                   >
                     Get Free Quote
                     <svg
@@ -76,52 +78,23 @@ function Hero4() {
                         strokeLinejoin="round"
                       ></path>
                     </svg>
-                  </NavLink>
+                  </button> */}
+
+                  <FreeQuote/>
 
                   <a
-                    href="/howWeWork.pdf"
+                    href="/HowWeWork.pdf"
                     className="text-decoration-underline fw-bold text-black px-3"
                     data-aos="fade-zoom-in"
                     data-aos-delay="300"
                     target="_blank"
                     rel="noopener noreferrer"
+                    
                   >
                     How We Work
                   </a>
 
                 </div>
-
-
-                {/* value div */}
-                {/* <div className="row">
-                  <div className="col-12 col-md-6 d-flex align-items-center justify-content-center border-end mt-5">
-                    <h2 className="odometer">
-                      <CountUp end={99} duration={3000}  enableScrollSpy />
-                    </h2>
-                    <span className="fs-4 fw-medium align-self-center">%</span>
-                    <p
-                      className="ms-3"
-                      data-aos="fade-zoom-in"
-                      data-aos-delay="200"
-                    >
-                      Genuine repeated happy customers.
-                    </p>
-                  </div>
-                  <div className="col-12 col-md-6 d-flex align-items-center justify-content-center mt-5">
-                    <h2 className="odometer">
-                      <CountUp end={98} duration={3000} enableScrollSpy scrollSpyOnce={false} data-aos="fade-zoom-in"
-                        data-aos-delay="200" />
-                    </h2>
-                    <span className="fs-4 fw-medium align-self-center">%</span>
-                    <p
-                      className="ms-3"
-                      data-aos="fade-zoom-in"
-                      data-aos-delay="300"
-                    >
-                      Trusted by <br /> companies
-                    </p>
-                  </div>
-                </div> */}
 
                 <div className="row text-center text-md-start">
 

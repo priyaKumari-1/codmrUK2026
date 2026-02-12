@@ -11,6 +11,7 @@ import img3 from '../../../assets/imgs/services-details-2/datacloud/img-3.png';
 import checkImg from '../../../assets/imgs/services-details/check.svg';
 
 import S_rightContainer from '../../HigherEducation/S_rightContainer/S_rightContainer';
+import ServiceSidebar from '../../ServiceSidebar/ServiceSidebar';
 // import DataCloudAccordionData from '../DataCloudAccordionData/DataCloudAccordionData';
 
 function MarketingCloud_Second() {
@@ -149,12 +150,11 @@ function MarketingCloud_Second() {
                             <div className=''>
                               <h4 className="mt-5 pt-4 border-top mb-3">Why Businesses Use Salesforce Marketing Cloud</h4>
                               <p className='mb-3'>
-                               In today’s digital landscape, customers expect relevant, personalized interactions. Traditional one-size-fits-all campaigns no longer deliver results. Salesforce Marketing Cloud changes that by enabling you to.  
+                               In today's digital landscape, customers expect relevant, personalized interactions. Traditional one-size-fits-all campaigns no longer deliver results. Salesforce Marketing Cloud changes that by enabling you to.  
                               </p>
                               <p><b>Personalized Customer Experiences: </b>directly within Sales, Service, Marketing, and Commerce.</p>
                               <p><b>Driving personalization at scale:</b>with unified customer profiles (CDP).</p>
                               <p><b>Automating journeys and campaigns:</b>with Einstein + Flow. </p>
- 
                             </div>
 
                             {/* Accordion */}
@@ -169,7 +169,7 @@ function MarketingCloud_Second() {
 
                         <div className="col-lg-4 sidebar">
 
-                            {/* <S_rightContainer /> */}
+                            <ServiceSidebar/>
                             
                                <div className="zoom-img mt-5 rounded-4">
                                  <img src={img3} className="" width={'100%'}/>

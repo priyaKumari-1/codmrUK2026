@@ -1,14 +1,15 @@
 import './ServiceMainNextComponent.css';
+import CountUp from '../../../utils/CountUp/CountUp';
 const ServiceMainNextComponent = () => {
   const counters = [
     {
       title: (
         <>
-          Continuous <br /> growth with
+         Years of Industry Experience
         </>
       ),
-      value: 20,
-      subtitle: "New accounts",
+      value: 25,
+      subtitle: "Delivering enterprise software solutions",
     },
     {
       title: (
@@ -16,8 +17,8 @@ const ServiceMainNextComponent = () => {
           Successfully <br /> completed
         </>
       ),
-      value: 20,
-      subtitle: "Finished projects",
+      value: 30,
+      subtitle: "Delivering secure, and high quality digital solutions on time.",
     },
     {
       title: (
@@ -53,7 +54,8 @@ const ServiceMainNextComponent = () => {
                     <span className="service_countnum h1 fw-black my-0">
                       +
                       <span className="odometer"></span>
-                      <span>{item.value}</span>
+                      {/* <span>{item.value}</span> */}
+                      <CountUp end={item.value} duration={3000} enableScrollSpy scrollSpyOnce={false} />
                     </span>
 
                     <p className="service_countnumspan fs-5">{item.subtitle}</p>

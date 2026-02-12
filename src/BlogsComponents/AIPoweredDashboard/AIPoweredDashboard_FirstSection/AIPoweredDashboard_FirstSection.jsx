@@ -44,7 +44,7 @@ function AIPoweredDashboard_FirstSection() {
 
                         <HeadingContent
                             title="Revolutionizing Pharmaceutical Operations with Our AI-Powered Salesforce Dashboard For one of our client"
-                            content="In today's fast-paced pharmaceutical industry, data moves faster than decisions. Managing vast inventories, ensuring strict compliance, monitoring sales performance, and predicting demand are challenges that require more than just a basic reporting tool — they demand intelligence. Salesforce Einstein AI & LLM Model is the solution that transforms your Salesforce CRM into a powerful AI-driven dashboard, enabling you to make data-driven decisions with unprecedented speed and accuracy."
+                            content="In today's fast-paced pharmaceutical industry, data moves faster than decisions. Managing vast inventories, ensuring strict compliance, monitoring sales performance, and predicting demand are challenges that require more than just a basic reporting tool they demand intelligence. Salesforce Einstein AI & LLM Model is the solution that transforms your Salesforce CRM into a powerful AI-driven dashboard, enabling you to make data-driven decisions with unprecedented speed and accuracy."
                         />
 
                         <HeadingContent
