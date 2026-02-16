@@ -112,11 +112,13 @@ function Navbar() {
               >
                 <div className="row ps-5 p-md-0">
                   {/* Column 1 */}
-                  <div className="col-md-3">
-                    <h6 className="text-uppercase fw-bold mb-3">
+                  <div className="col-md-6 servicesCrm">
+                     <h6 className="text-uppercase fw-bold mb-3 text-center">
                       Salesforce CRM
                     </h6>
 
+                    <div className="d-flex gap-4">
+                    <div>
                     <Link
                       to="/ItServices/salesforce-education-cloud"
                       className="dropdown-item"
@@ -148,7 +150,6 @@ function Navbar() {
                     >
                       Salesforce Data Cloud
                     </Link>
-
                     <Link
                       to="/ItServices/saleforce-marketing-cloud"
                       className="dropdown-item"
@@ -157,6 +158,9 @@ function Navbar() {
                       Salesforce Marketing Cloud
                     </Link>
 
+                       </div>
+                       <div>
+                      
                     <Link
                       to="/ItServices/salesforce-sales-cloud"
                       className="dropdown-item"
@@ -179,7 +183,7 @@ function Navbar() {
                       onClick={handleNavItemClick}
                     >
                       Salesforce Energy and Utilities Cloud
-                    </Link>
+                    </Link> 
 
                     <Link
                       to="/ItServices/salesforce-manufacturing-cloud"
@@ -188,20 +192,20 @@ function Navbar() {
                     >
                       Salesforce Manufacturing Cloud
                     </Link>
-                    
-                      <Link
+
+                    <Link
                       to="/ItServices/salesforce-nonprofit-cloud"
                       className="dropdown-item"
                       onClick={handleNavItemClick}
                     >
                       Salesforce Nonprofit Cloud
                     </Link>
-                    
+
+                      </div>
+                    </div>                    
                   </div>
 
-
-                  {/* Column 2 */}
-                  <div className="col-md-3">
+                  <div className="col-md-2">
                     <h6 className="text-uppercase fw-bold mb-3">Data</h6>
                     <Link
                       to="/ItServices/api-integration"
@@ -226,8 +230,7 @@ function Navbar() {
                     </Link>
                   </div>
 
-                  {/* Column 3 */}
-                  <div className="col-md-3">
+                  <div className="col-md-2">
                     <h6 className="text-uppercase fw-bold mb-3">Development</h6>
                     <Link
                       to="/ItServices/SalesforceCRM"
@@ -266,8 +269,7 @@ function Navbar() {
                     </Link>
                   </div>
 
-                  {/* Column 4 */}
-                  <div className="col-md-3">
+                  <div className="col-md-2">
                     <h6 className="text-uppercase fw-bold mb-3">Support</h6>
                     <Link
                       to="/ItServices/Technical-Support"
@@ -294,7 +296,6 @@ function Navbar() {
               >
                 {/* Salesforce CRM */}
                 <li className="accordion-title">Salesforce CRM</li>
-
                 <li><NavLink to="/ItServices/salesforce-education-cloud" onClick={handleNavItemClick}>Salesforce Education Cloud</NavLink></li>
                 <li><NavLink to="/ItServices/salesforce-financial-services" onClick={handleNavItemClick}>Salesforce Financial Services</NavLink></li>
                 <li><NavLink to="/ItServices/salesforce-health&insurance-cloud" onClick={handleNavItemClick}>Salesforce Health & Insurance Cloud</NavLink></li>
@@ -304,17 +305,16 @@ function Navbar() {
                 <li><NavLink to="/ItServices/salesforce-service-cloud" onClick={handleNavItemClick}>Salesforce Service Cloud</NavLink></li>
                 <li><NavLink to="/ItServices/salesforce-energy-utilities-cloud" onClick={handleNavItemClick}>Salesforce Energy and Utilities Cloud</NavLink></li>
                 <li><NavLink to="/ItServices/salesforce-manufacturingcloud" onClick={handleNavItemClick}>Salesforce Manufacturing Cloud</NavLink></li>
+                 <li><NavLink to="/ItServices/salesforce-nonprofit-cloud" onClick={handleNavItemClick}>Salesforce Nonprofit Cloud</NavLink></li>
 
                 {/* Data */}
                 <li className="accordion-title mt-3">Data</li>
-
                 <li><NavLink to="/ItServices/api-integration" onClick={handleNavItemClick}>API Integration</NavLink></li>
                 <li><NavLink to="/ItServices/data-integration" onClick={handleNavItemClick}>Data Integration</NavLink></li>
                 <li><NavLink to="/ItServices/data-migration" onClick={handleNavItemClick}>Data Migration</NavLink></li>
 
                 {/* Development */}
                 <li className="accordion-title mt-3">Development</li>
-
                 <li><NavLink to="/ItServices/SalesforceCRM" onClick={handleNavItemClick}>CRM Development</NavLink></li>
                 <li><NavLink to="/ItServices/BuildingLLM" onClick={handleNavItemClick}>Building LLM</NavLink></li>
                 <li><NavLink to="/ItServices/DotNetApplication" onClick={handleNavItemClick}>.NET Application</NavLink></li>
@@ -334,24 +334,24 @@ function Navbar() {
 
             {/* BLOGS */}
             <li className="nav-item mega-dropdown1 blogsli">
-              <button
+              <div
                 type="button"
-                className="nav-link mobile-toggle blogsDiv" 
+                className="nav-link mobile-toggle blogsDiv gap-1 nav-link mobile-toggle d-flex align-items-center" 
                 onClick={() => toggleDropdown("blog")}
                  style={{width:'100%' ,height:"84px"}}
               >
                 <NavLink to="/blog"
                   className="text-decoration-none text-reset">
-                  Blogs
-                  <MdKeyboardArrowDown
+                Blogs
+                </NavLink> 
+                 <MdKeyboardArrowDown
                     className={openDropdown === "blog" ? "rotate" : ""}
                   />
-                </NavLink>
-              </button>
+              </div>
 
               {/* for lg screen */}
               <div
-                className={`dropdown-menu1 mega-menu1 ${openDropdown === "blog" ? "show" : ""
+                className={`dropdown-menu1 mega-menu1 ${openDropdown === "blog" ? "" : ""
                   }`}
               >
                 <div className="col-md-3">
@@ -426,18 +426,41 @@ function Navbar() {
               </ul>
             </li>
 
-             <li className="nav-item d-flex justify-content-center align-items-center">
+             {/* <li className="nav-item d-flex justify-content-center align-items-center">
               <NavLink
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active-link" : ""}`
                 }
                 to="https://saasailabs.codmsoftware.co.uk/"
-                onClick={handleNavItemClick}
+                onClick={handleNavItemClick} 
                 target="_blank"
               >
               SAAS AI LABS  
               </NavLink>
-            </li>
+            </li> */}
+
+         
+            <li className="nav-item mega-dropdown1 position-relative">
+  <div className="d-flex align-items-center nav-link text-reset"
+  style={{width:'100%' ,height:"84px"}}>
+    PARTNER
+    <MdKeyboardArrowDown className="ms-1" />
+  </div>
+
+  {/* Dropdown Menu */}
+  <ul className="partner-dropdown list-unstyled">
+    <li className="nav-item d-flex justify-content-center align-items-center">
+      <NavLink
+        className="nav-link"
+        to="https://saasailabs.codmsoftware.co.uk/"
+        target="_blank"
+      >
+        SAAS AI LABS
+      </NavLink>
+    </li>
+  </ul>
+</li>
+
 
                <li className="nav-item  d-flex justify-content-center align-items-center">
               <NavLink
@@ -462,7 +485,7 @@ function Navbar() {
               >
              <button className="p-2 rounded-3 purple-bg border-0">Join Us</button>
               </Link>
-            </li>
+            </li> 
           </ul>
         </div>
 
@@ -476,7 +499,7 @@ function Navbar() {
             <p className="align-items-center" style={{ fontSize: ".9rem", marginBottom: "1px" }}>UK: (+44) 0121 818 6924</p>
           </div>
          
-          <div className="d-flex align-items-center">
+          <div className="d-flex align-items-center"> 
             <img
               src={flag3}
               alt="USA Flag"
@@ -490,11 +513,10 @@ function Navbar() {
               src={flag2}
               alt="UK Flag"
               style={{ width: "15px", height: "13px", marginRight: "6px", paddingTop: "0rem", }}
-            />
+            /> 
             <p className="align-items-center" style={{ fontSize: ".9rem", marginBottom: "1px" }}>India : (+91) 9717116432</p>
           </div>
         </div>
-        
       </div>
     </nav>
   );

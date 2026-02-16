@@ -1,10 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './CarouselSectionCard.css';
-import Energy from '../../assets/imgs/Carousel/Energy.avif';
+// import Energy from '../../assets/imgs/Carousel/Energy.avif';  
+import Energy from '../../assets/imgs/Carousel/EnergyImg.jpg';
 import img2 from '../../assets/imgs/Carousel/ngo.png';
 // import educationImg from '../../assets/imgs/Carousel/educationImg.jpg';
-import educationImg from '../../assets/imgs/Carousel/education.jpg';
+import educationImg from '../../assets/imgs/Carousel/ed.jpg';
 
 export default function CarouselSectionCard() {
   return (
@@ -58,7 +59,6 @@ export default function CarouselSectionCard() {
             <p>Partnering with energy and utility providers to modernize operations, enhance customer experiences, and accelerate the transition to sustainable energy</p>
           </div>
         </div>
-
       </div>
 
       {/* Controls */}

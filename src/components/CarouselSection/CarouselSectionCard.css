@@ -5,7 +5,8 @@
   height: 70vh;
   object-fit: cover;
   /* filter: blur(2px); */
-  filter: brightness(2px);
+  /* filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7)); */
+  filter: brightness(40%);
 }
 
 .custom-caption {

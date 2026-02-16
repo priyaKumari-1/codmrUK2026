@@ -40,15 +40,17 @@ function NonprofitCloud_First() {
                             src={img1}
                             alt="Codm"
                             width={'90%'}
-                        />
+                        />  
                         <HeadingContent
                             title=""
                             content={
                                 <>
                                     <p>
                                         Nonprofit Cloud is a Salesforce solution designed specifically for nonprofits, charities, and social organizations. It leverages the power of Salesforce's platform to provide tools for fundraising, program management, volunteer management, and donor engagement. Nonprofit Cloud helps organizations streamline operations, engage supporters, and achieve their missions more effectively.
+                                        <br/>
+                                        We help nonprofits apply for and secure free Salesforce licenses through the Power of Us Program by guiding them through eligibility verification and the application process. Our support ensures a smooth setup so organizations can start using Salesforce quickly and efficiently.
                                     </p>
-                                </>
+                                </> 
                             }
                         />
 
@@ -64,7 +66,7 @@ function NonprofitCloud_First() {
 
                         {/* filp img and content */}
 
-                        <div className="col-8">
+                        <div className="col-12 col-md-8">
                             <FlipImgwithContent items={items} />
 
                         </div>

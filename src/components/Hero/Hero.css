@@ -183,11 +183,17 @@
     top: 11rem;
     left: -19px;
     }
-    .animatedPills4 {
+    /* .animatedPills4 {
+    position: absolute !important;
+    top: 10rem !important;
+    right: 1rem !important;
+    } */
+     .animatedPills4 {
     position: absolute;
-    top: 10rem;
+    top: 10rem ;
     right: 1rem;
     }
+
 
 }
 
@@ -232,4 +238,18 @@
     top: 10rem;
     right:2rem;
 }
+}
+
+@media (min-width:580px) {
+      .animatedPills4 {
+        position: absolute;
+        top: 10rem;
+        right: 4rem;
+    }
+        .animatedPills6 {
+        position: absolute;
+        top: 18rem;
+        right: 8rem;
+      }
+  
 }

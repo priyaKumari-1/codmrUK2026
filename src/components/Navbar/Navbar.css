@@ -122,8 +122,8 @@
     border: none;
     font-weight: 600;
     display: flex;
-    justify-content:center;
-    align-items: center;
+    justify-content:start !important;
+    align-items:start !important;
     padding: 0.75rem 0;
     text-align: left;
     cursor: pointer;
@@ -209,3 +209,51 @@
      height: 44px !important;
    }
 }
+
+.servicesCrmDiv{
+  height: 250px;
+}
+
+@media (max-width:990px){
+  .navbar-nav{
+  align-items: start !important;
+  padding-left: 25px !important;
+  height: 100vh;
+}
+.serviceDiv{
+  height: 30px !important;
+}
+.blogsDiv{
+ height: 35px !important;
+}
+}
+
+
+
+/* css for saas dropdown */
+
+.mega-dropdown1 {
+  cursor: pointer;
+}
+
+.partner-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 200px;
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.mega-dropdown1:hover .partner-dropdown {
+  display: block;
+}
+
+.partner-dropdown .nav-link {
+  padding: 8px 16px;
+  display: block;
+}
+

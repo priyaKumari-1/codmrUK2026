@@ -1,18 +1,20 @@
 import BlogSidebar from './BlogSidebar';
 import { Link } from "react-router-dom";
 import img1 from '../../assets/imgs/services-details/icon-contact.svg';
-import img2 from '../../assets/imgs/services-details-2/PharmaDashboard/img-4.png';
+import img2 from '../../assets/imgs/services-details-2/AgentforceVibe/img1.png';
+import img3 from '../../assets/imgs/services-details-2/AgentforceVibe/AgentforceVibeImg.png';
+import img4 from '../../assets/imgs/services-details-2/AgentforceVibe/img3.png';
 import hardik from '../../assets/imgs/services-details-2/PharmaDashboard/hardik.png';
 import bgImg from '../../assets/imgs/services-details/bg-line-3.png';
 
-function AIPoweredDashboardSidebar() {
+function AgentforceAISidebar() {
   return (
     <div className=''>
         <BlogSidebar/>
         {/* next  */}
                         {/* video section */}
         
-                        <div className="mt-5" style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+                        {/* <div className="mt-5" style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
                             <iframe
                                 src="https://www.youtube.com/embed/buQ48j8Zr94?si=GWkmqJwMFpJ5_NjF"
                                 title="YouTube video"
@@ -28,7 +30,7 @@ function AIPoweredDashboardSidebar() {
                                     borderRadius: "10px",
                                 }}
                             ></iframe>
-                        </div>
+                        </div> */}
         
                         {/* next container */}
                         <div className="S_right_Container purple-bg rounded-4 mt-7 position-relative">
@@ -89,14 +91,22 @@ function AIPoweredDashboardSidebar() {
                         </div>
         
                         {/* img container */}
-                        <div className="zoom-img mt-5 rounded-4">
-                            <img src={img2} className="" width={'100%'} />
-                            
+                        <div className="zoom-img mt-5 rounded-4 border">
+                            <img src={img2} className="" width={'100%'}/>
+                            <p className='text-center pt-3'>Salesforce project where Agentforce is deploying a Sales Operation Manager app</p>
                         </div>
-                        
-    
+
+                        <div className="zoom-img mt-5 rounded-4 border">
+                            <img src={img2} className="" width={'100%'}/>
+                        </div>
+
+                        <div className="zoom-img mt-5 rounded-4 border">
+                            <img src={img3} className="" width={'100%'}/>
+                        </div>
+            
     </div>
   )
 }
 
-export default AIPoweredDashboardSidebar;
+export default AgentforceAISidebar;
+

@@ -15,11 +15,11 @@ import flag4 from '../../assets/imgs/contact-4/Flag_of_the_United_States.png';
 
 const ContactSection_SecondSection = () => {
   return (
-    <section className="ContactSection_SecondSection p-md-5 text-center text-md-start">
+    <section className="ContactSection_SecondSection p-md-2 text-center text-md-start">
       <div className="container">
         <div className="row">
           {/* Help & Support */}
-          <div className="ContactSection_SecondSectionContainer col-12 col-md-6 col-lg-3 mb-5 mb-md-0 pt-5">
+          <div className="ContactSection_SecondSectionContainer col-12 col-md-6 col-lg-3 mb-md-0 pt-md-5 pt-3">
             <div className="feature-item mb-5 mb-lg-0 pe-md-5 hover-up text-center text-md-start">
               <div className="icon-flip position-relative rounded-3 mb-4">
                 <div className="S_secondLineImg">
@@ -38,131 +38,131 @@ const ContactSection_SecondSection = () => {
           </div>
 
           {/* Call Us */}
-          <div className="col-12 col-md-6 col-lg-3 mb-5 mb-md-0 pt-5 text-center text-md-start d-flex justify-content-center">
-  <div className="feature-item mb-5 mb-lg-0 pe-md-5 hover-up text-center text-md-start">
-    
-    <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4 mx-auto mx-md-0">
-      <div className="S_secondLineImg">
-        <img src={icon2} alt="Codm" />
-        <span className="customLine"></span>
-      </div>
-    </div>
+          <div className="col-12 col-md-6 col-lg-3 mb-md-0 text-center text-md-start d-flex justify-content-center pt-md-5 pt-3">
+            <div className="feature-item mb-5 mb-lg-0 pe-md-5 hover-up text-center text-md-start">
 
-    <h6 className="contactHeading">Call Us</h6>
+              <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4 mx-auto mx-md-0">
+                <div className="S_secondLineImg">
+                  <img src={icon2} alt="Codm" />
+                  <span className="customLine"></span>
+                </div>
+              </div>
 
-    <p className="text-center text-md-start">
-      <span>
-        <img
-          src={flag1}
-          alt="UK Flag"
-          style={{ width: "28px", height: "20px", marginRight: "6px" }}
-        />
-        UK: (+44)01218186924 <br />
-      </span>
+              <h6 className="contactHeading">Call Us</h6>
 
-      <span>
-        <img
-          src={flag4}
-          alt="USA Flag"
-          style={{ width: "28px", height: "20px", marginRight: "6px" }}
-        />
-        USA: (+1) 201 623 3132 <br />
-      </span>
+              <p className="text-center text-md-start">
+                <span>
+                  <img
+                    src={flag1}
+                    alt="UK Flag"
+                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
+                  />
+                  UK: (+44)01218186924 <br />
+                </span>
 
-      <span>
-        <img
-          src={flag3}
-          alt="India Flag"
-          style={{ width: "28px", height: "20px", marginRight: "6px" }}
-        />
-        India: (+91) 9717116432
-      </span>
-    </p>
-  </div>
-</div>
+                <span>
+                  <img
+                    src={flag4}
+                    alt="USA Flag"
+                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
+                  />
+                  USA: (+1) 201 623 3132 <br />
+                </span>
+
+                <span>
+                  <img
+                    src={flag3}
+                    alt="India Flag"
+                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
+                  />
+                  India: (+91) 9717116432
+                </span>
+              </p>
+            </div>
+          </div>
 
 
           {/* Business Department */}
-         <div className="col-12 col-md-6 col-lg-3 mb-5 mb-md-0 pt-5 d-flex justify-content-center">
-  <div className="feature-item mb-5 mb-lg-0 pe-md-5 hover-up text-center text-md-start">
+          <div className="col-12 col-md-6 col-lg-3 mb-5 mb-md-0 pt-5 d-flex justify-content-center">
+            <div className="feature-item mb-5 mb-lg-0 pe-md-5 hover-up text-center text-md-start">
 
-    <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4 mx-auto mx-md-0">
-      <div className="S_secondLineImg text-center text-md-start">
-        <img src={icon3} alt="Codm" />
-        <span className="customLine"></span>
-      </div>
-    </div>
+              <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4 mx-auto mx-md-0">
+                <div className="S_secondLineImg text-center text-md-start">
+                  <img src={icon3} alt="Codm" />
+                  <span className="customLine"></span>
+                </div>
+              </div>
 
-    <h6 className="contactHeading text-center text-md-start">
-      Business Department
-    </h6>
+              <h6 className="contactHeading text-center text-md-start">
+                Business Department
+              </h6>
 
-    <p className="text-500 text-center text-md-start" style={{ display: "grid" }}>
-      <span>
-        <img
-          src={flag1}
-          alt="UK Flag"
-          style={{ width: "28px", height: "20px", marginRight: "6px" }}
-        />
-        Regus - Edmund house, 12-22 Newhall St, Birmingham B3 3AS,UK
-      </span>
-      <br />
+              <p className="text-500 text-center text-md-start" style={{ display: "grid" }}>
+                <span>
+                  <img
+                    src={flag1}
+                    alt="UK Flag"
+                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
+                  />
+                  Regus - Edmund house, 12-22 Newhall St, Birmingham B3 3AS,UK
+                </span>
+                <br />
 
-      <span>
-        <img
-          src={flag2}
-          alt="London Flag"
-          style={{ width: "28px", height: "20px", marginRight: "6px" }}
-        />
-        London: 71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, UK
-      </span>
-    </p>
+                <span>
+                  <img
+                    src={flag2}
+                    alt="London Flag"
+                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
+                  />
+                  London: 71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, UK
+                </span>
+              </p>
 
-  </div>           
-</div>
+            </div>
+          </div>
 
-                
+
           {/* Global Branch */}
           <div className="col-12 col-md-6 col-lg-3 mb-5 mb-md-0 pt-5 d-flex justify-content-center">
-  <div className="feature-item mb-5 mb-lg-0 pe-md-5 hover-up text-center text-md-start">
+            <div className="feature-item mb-5 mb-lg-0 pe-md-5 hover-up text-center text-md-start mb-3">
 
-    <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4 mx-auto mx-md-0">
-      <div className="S_secondLineImg text-center text-md-start">
-        <img src={icon4} alt="Codm" />
-        <span className="customLine"></span>
-      </div>
-    </div>
+              <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4 mx-auto mx-md-0">
+                <div className="S_secondLineImg text-center text-md-start">
+                  <img src={icon4} alt="Codm" />
+                  <span className="customLine"></span>
+                </div>
+              </div>
 
-    <h6 className="contactHeading text-center text-md-start">
-      Global Branch
-    </h6>
+              <h6 className="contactHeading text-center text-md-start">
+                Global Branch
+              </h6>
 
-    <p className="text-500 text-center text-md-start" style={{ display: "grid" }}>
-      <span>
-        <img
-          src={flag4}
-          alt="USA Flag"
-          style={{ width: "28px", height: "20px", marginRight: "6px" }}
-        /> 
-        USA: Talent4World LLC 4501 Nightland Dr Plano, TX 75024 - USA
-      </span>
+              <p className="text-500 text-center text-md-start" style={{ display: "grid" }}>
+                <span>
+                  <img
+                    src={flag4}
+                    alt="USA Flag"
+                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
+                  />
+                  USA: Talent4World LLC 4501 Nightland Dr Plano, TX 75024 - USA
+                </span>
 
-      <br />
+                <br />
 
-      <span>
-        <img
-          src={flag3}
-          alt="India Flag"
-          style={{ width: "28px", height: "20px", marginRight: "6px" }}
-        />
-        <b>SaaS AI Labs</b><br />
-        Ihdp Business Park Plot Number 7, Serenia second floor,  
-        Sector 127, Noida Uttar Pradesh 201304
-      </span>
-    </p>
+                <span>
+                  <img
+                    src={flag3}
+                    alt="India Flag"
+                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
+                  />
+                  <b>SaaS AI Labs</b><br />
+                  Ihdp Business Park Plot Number 7, Serenia second floor,
+                  Sector 127, Noida Uttar Pradesh 201304
+                </span>
+              </p>
 
-  </div>
-</div>
+            </div>
+          </div>
 
 
         </div>

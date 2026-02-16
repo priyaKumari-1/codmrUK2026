@@ -17,9 +17,8 @@ const ContactSection_FirstSection = () => {
           <div className="col-lg-6">
             <div className="pe-lg-8 me-lg-auto mb-5 mb-lg-0">
               <h6 className="reactbtn purple-text text-center text-md-start">Reach Out</h6>
-              <h3 className="contactSectionHeading mb-4">
-                Thinking about<br/> a project? Get <br/>in touch with <br/>us.
-              </h3>
+              <h3 className="contactSectionHeading mb-4 d-none d-md-block">Thinking about<br/> a project? Get <br/>in touch with <br/>us.</h3>
+              <h3 className='contactSectionHeading mb-4 d-md-none'>Thinking about a project? Get in touch with us.</h3>
               <p className="contactSectionPara text-center text-md-start w-100 pe-md-5">
                 We're here to listen, collaborate, and bring your
                 vision to life.Reach out today let's start building
@@ -75,9 +74,9 @@ const ContactSection_FirstSection = () => {
                 <p className="fs-5 text-100-keep mb-0">Active Projects</p>
               </div>
                
-               <div className='overflow-hidden'>
+               <div className='overflow-hidden d-none d-md-block'>
                  <img
-                className="position-absolute top-50 start-50 translate-middle z-0 overflow-hidden"
+                className="position-absolute top-50 start-50 translate-middle overflow-hidden"
                 src={bgLine} width={'100%'}
                 alt="Codm"
               />

@@ -37,12 +37,11 @@ const PartnerLogo = () => {
 
   return (
     <>
-      <div className="px-5 py-3 container mt-lg-0 border-bottom">
-           <h4 className='text-center Heading3 pb-2'>Our Partners</h4>
+      <div className="px-5 py-3 container mt-lg-0 pt-5">
+           <h4 className='text-center Heading3 pb-2 pb-5'>Clients We Serve</h4>
         <div className="container">
           <div className="row">
             <div className="logo-fade position-relative z-1">
-
               <div className="logo-track">
                 {infiniteLogos.map((logo, index) => (
                   <div className="logo-item" key={index}>

@@ -13,6 +13,7 @@ import blog4 from '../../assets/imgs/blogImgs/agentforce.webp';
 import blog5 from '../../assets/imgs/blogImgs/SalesforceAi.png';
 import blog6 from '../../assets/imgs/blogImgs/SalesforceRevenueCloud.png';
 import blog7 from '../../assets/imgs/services-details-2/AgentforceFinancialServices/AgentfinanceService.webp';
+import blog8 from '../../assets/imgs/blogImgs/img7.png';
 
 // import blog5 from '../../assets/imgs/blogImgs/agentforce.webp';
 // import blog6 from '../../assets/imgs/blogImgs/'
@@ -87,6 +88,15 @@ const blogData = [
         'Financial Service Cloud enables banks and financial institutions to deliver personalized, compliant, and data-driven customer experiences.',
       link: '/blog/AgentforceFinancialServices',
     },
+    {
+      id: 8,
+      image: blog8,
+      tag: 'Agentforce',
+      title: 'Agentforce Vibes: AI Powered Salesforce Development Experience',
+      description:
+        'Agentforce Vibes enhances Salesforce development by enabling AI-assisted app creation, automated deployments, and streamlined lead management workflows directly within VS Code.',
+      link: '/blog/AgentforceVibes',
+        }
 ];
 
 function BlogSection() {

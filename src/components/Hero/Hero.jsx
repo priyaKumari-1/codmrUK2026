@@ -14,7 +14,7 @@ import "./Hero.css";
 function Hero() {
   return (
     <>
-    <section className="hero-Section hero">
+    <section className="hero-Section hero"> 
       <div className="container heroContainer">
         <div className="row align-items-center">
           {/* Left Content */}
@@ -30,8 +30,8 @@ function Hero() {
              We deliver enterprise-scale software solutions designed for the future helping businesses modernize, streamline operations, and scale with confidence using advanced cloud and CRM technologies. Our development approach follows SOLID principles, ensuring clean, maintainable, and highly scalable architecture from day one.
             </p>
 
-            {/* <div className="py-4 d-flex gap-3 flex-wrap">
-              <Link
+            <div className="py-4 d-flex gap-3 flex-wrap">
+              {/* <Link
                 to="/ItServices"
                 className="explorebtn btn-gradient text-decoration-none"
               >
@@ -59,19 +59,18 @@ function Hero() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </Link>
+              </Link> */}
 
-              <ContactUsBtn />
+              {/* <ContactUsBtn /> */}
 
-              <img src={saleforceLogo} alt="" width={'15%'} />
+              {/* <img src={saleforceLogo} alt="" width={'15%'} /> */}
              
-              <img src={Appexchangelogo} alt="" width={'15%'} />
-            </div> */}
+              {/* <img src={Appexchangelogo} alt="" width={'15%'} /> */}
+            </div> 
           </div>
 
           {/* Right Content */}
-          <div className="col-12 col-md-6">
-            {/* <RightSideHeroSection />*/}
+          <div className="col-12 col-md-6 pt-5">
 
             <div className="rightsidePillSection">
               <div className="animatedPillsContainer">
@@ -114,6 +113,7 @@ function Hero() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

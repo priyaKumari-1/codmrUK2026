@@ -181,23 +181,11 @@ function TriggerframeworkBlog_First() {
                           }
                           />
 
-
-
                        </div>
                        
-                      
-
-
-                        {/* next  */}
-
-                        {/* next content */}
-                       
                         <div>
-                        </div>
+                        </div>    
 
-                        {/* img and content */}
-
-                      
                         <div className='border-bottom pb-3'></div>
 
                         {/* <AccordionDataSection/> */}
@@ -210,12 +198,9 @@ function TriggerframeworkBlog_First() {
                         <TriggerFrameworkSidebar/>
                     </div>
 
-                 
-
                     {/* form section */}
 
                     {/* last section */}
-
 
                 </div>
             </div>

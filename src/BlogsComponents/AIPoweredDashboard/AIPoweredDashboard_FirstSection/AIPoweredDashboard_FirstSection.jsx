@@ -191,14 +191,6 @@ function AIPoweredDashboard_FirstSection() {
                         <AlPoweredDashboardSidebar />
                     </div>
 
-                    {/* code section */}
-                    {/* <CodeSection/> */}
-
-                    {/* form section */}
-
-                    {/* last section */}
-
-
                 </div>
             </div>
         </>

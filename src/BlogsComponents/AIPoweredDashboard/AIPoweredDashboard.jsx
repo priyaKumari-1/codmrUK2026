@@ -15,7 +15,7 @@ function AIPoweredDashboard() {
                     ]}
       />  
       <AIPoweredDashboard_FirstSection/>
-      <BlogFormSection heading="Share Your Thoughts on Our Salesforce Pharmaceutical Dashboard"/>
+      <BlogFormSection heading="Share Your Thoughts on Our AI Powered Salesforce Development"/>
       <BlogSection/>
     </>
   ) 
