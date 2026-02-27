@@ -1,4 +1,3 @@
-import './AgentforcePara.css';
 function AgentforcePara() {
   return (
     <div>

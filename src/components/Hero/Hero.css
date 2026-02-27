@@ -1,6 +1,5 @@
   .heroContainer{
       display: flex;
-      /* overflow-x: hidden; */
       font-family: 'Satoshi', sans-serif;
   }
   .hero-Section{
@@ -42,7 +41,6 @@
       right: 35px;
 }
 
-  /* dark mode functionality */
 
   body.dark-mode .agentBtn{
     background-color: #271c52;
@@ -183,11 +181,6 @@
     top: 11rem;
     left: -19px;
     }
-    /* .animatedPills4 {
-    position: absolute !important;
-    top: 10rem !important;
-    right: 1rem !important;
-    } */
      .animatedPills4 {
     position: absolute;
     top: 10rem ;
@@ -250,6 +243,9 @@
         position: absolute;
         top: 18rem;
         right: 8rem;
+      }
+      .salesforceLogo{
+        display: block;
       }
   
 }

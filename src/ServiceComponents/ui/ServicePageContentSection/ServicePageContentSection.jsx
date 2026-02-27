@@ -1,4 +1,3 @@
-// S_secondSection.js
 import "./ServicePageContentSection.css";
 
 const ServicePageContentSection = ({ 
@@ -29,8 +28,6 @@ const ServicePageContentSection = ({
               ))}
             </div>
           </div>
-
-        
         </div>
       </div>
     </section>

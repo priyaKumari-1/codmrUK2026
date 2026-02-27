@@ -23,22 +23,6 @@
 }
 }
 
-/* 
-.expertise-section {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 50px 40px;
-  margin-top: 60px;
-}
-
-.expertise-section h3 {
-  color: #fff;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 30px;
-} */
-
 .expertise-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

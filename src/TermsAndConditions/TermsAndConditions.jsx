@@ -21,16 +21,6 @@ const TermsAndConditions = () => {
         and Conditions. If you do not agree, please do not use our Website.
       </p>
 
-      {/* <Section title="1. About Us">
-        <p>
-          <strong>CODM Software Limited</strong><br />
-          Registered in England and Wales<br />
-          Company Number: 15333870<br />
-          Registered Office: 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ,
-          United Kingdom
-        </p>
-      </Section> */}
-
       <Section title="1. Use of the Website">
         <ul>
           <li>Use the Website only for lawful purposes</li>

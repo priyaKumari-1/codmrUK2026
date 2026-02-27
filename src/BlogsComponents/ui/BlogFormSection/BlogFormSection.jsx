@@ -1,5 +1,3 @@
-// import "./BlogFormSection.css";
-
 const BlogFormSection = ({
   heading = "Share Your Thoughts on Our Integration Framework",
   subHeading = "Leave a comment",

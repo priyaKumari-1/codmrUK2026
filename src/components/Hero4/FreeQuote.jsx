@@ -50,9 +50,6 @@ function FreeQuote() {
             </button>
 
 
-
-
-            {/* {open && <FreeQuotePopup onClose={() => setOpen(false)} />} */}
             {open && <FreeQuotePopup isOpen={open} onClose={() => setOpen(false)} />}
         </>
     );

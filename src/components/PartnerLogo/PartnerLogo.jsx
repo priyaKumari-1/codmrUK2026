@@ -8,18 +8,6 @@ import img7 from '../../assets/imgs/CLI logo/Phase_Trust.png';
 import img6 from '../../assets/imgs/CLI logo/smartestEnergy.png';
 import img8 from '../../assets/imgs/CLI logo/Yamaha-Logo.png';
 
-
-// const logos = [
-//   img1,
-//   img2,
-//   img3,
-//   img4,
-//   img5,
-//   img6,
-//   img7,
-//   img8
-// ];
-
 const logos = [
   { src: img1, className: "w-120" },
   { src: img2, className: "w-80" },

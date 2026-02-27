@@ -132,14 +132,7 @@ function App() {
                 element={<NonprofitCloud/>}/>
 
               {/* previce routes */}
-
-             {/* <Route path='/ItServices/higher-education' element={<HigherEducation />} />
-             <Route path='/ItServices/Financial-Service' element={<FinancialServiceCloud />} />
-             <Route path="/ItServices/industries-cloud" element={<IndustriesCloud/>} />
-             <Route path="/ItServices/data-cloud-ai" element={<DataCloud/>}/>
-             
-             <Route path="/ItServices/marketing-cloud" element={<MarketingCloud/>}/> */}
-
+              
               {/* Data */}
               <Route path="/ItServices/api-integration" element={<ApiIntegration />}/>
               <Route path="/ItServices/data-integration" element={<DataIntegration />}/>

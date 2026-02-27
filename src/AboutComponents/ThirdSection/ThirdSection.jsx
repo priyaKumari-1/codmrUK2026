@@ -35,8 +35,6 @@ const ThirdSection = () => {
                   <span className="customLine"></span>
                 </div>
 
-
-                {/* <div className="customLine"></div> */}
               </div>
               <h4 className="text-center text-md-start">S.O.L.I.D Principle</h4>
               <p className="text-center text-md-start">

@@ -15,8 +15,6 @@ import img5 from '../../../assets/imgs/services-details-2/agentforce/img-5.png';
 
 import AgentforcePara from "../../ui/AgentforcePara/AgentforcePara";
 import FlipImgwithContentAgentforce from "./FlipImgwithContentAgentforce";
-
-import './AgentforceImplementation_First.css';
 import AgentforceImplementationBlog from "../../BlogSidebar/AgentforceImplementationBlog";
 
 function AgentforceImplementation_First() {
@@ -95,9 +93,6 @@ function AgentforceImplementation_First() {
 
                         {/* filp img and content */}
                         <FlipImgwithContentAgentforce items={items} />
-
-                        {/* next section  */}
-
 
                         <div className="implementation-section">
                             <h1 className="mb-4">Agentforce Implementation Use Cases</h1>
@@ -303,14 +298,6 @@ function AgentforceImplementation_First() {
 
                        <AgentforceImplementationBlog/>
                     </div>
-
-                    {/* code section */}
-                    {/* <CodeSection/> */}
-
-                    {/* form section */}
-
-                    {/* last section */}
-
 
                 </div>
             </div>  

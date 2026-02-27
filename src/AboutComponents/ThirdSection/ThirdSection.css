@@ -3,7 +3,6 @@
 }
 .ThirdSection_cardbottom{
   min-height: 470px;
-  /* height: 470px; */
 }
 
 /* custom line */
@@ -15,21 +14,11 @@
 }
 
 .ThirdSectionImg img {
-  display: block;               
-  /* width: 100%;  */
+  display: block; 
   height: auto;
 }
 
 .customLine {
-  /* position: absolute;
-  left: 50%;                    
-  transform: translate(-50%, -50%);
-  width: 2rem;
-  margin-top: .2rem;
-  height: 0.2rem;
-  background: #6d4df2;
-  border-radius: 2px; */
-
   position: absolute;
   bottom: -10px;   
   left: 50%;

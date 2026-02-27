@@ -1,7 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NewsletterSection.css";
-
-// import images
 import cpq from "../../assets/imgs/Certifications/CPQ.png";
 import admin from "../../assets/imgs/Certifications/Admin.png";
 import b2c from "../../assets/imgs/Certifications/B2C-Solution-Architect.png";
@@ -34,6 +32,58 @@ const Certifications = [
 ]
 
 function NewsletterSection() {
+
+  const [message,setMessage] = useState('');
+  const [email,setEmail]   = useState('');
+
+  // for accesing the token 
+      async function getAccessToken() {
+      const params = new URLSearchParams(); 
+      params.append("grant_type",import.meta.env.VITE_grant_type);
+      params.append("client_id",import.meta.env.VITE_client_id);
+      params.append("client_secret",import.meta.env.VITE_client_secret);
+    
+      const response = await fetch(
+        "https://codmsoftwarepvtltd9-dev-ed.develop.my.salesforce.com/services/oauth2/token",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",    
+          },
+          body: params,
+        }
+      );
+      const data = await response.json();
+      return data.access_token;
+     }
+
+   // for sending the email
+   const handleSubmit = async (e) => {
+    e.preventDefault();
+     const token = await getAccessToken();
+
+    try {
+      const response = await fetch(
+        "https://codmsoftwarepvtltd9-dev-ed.develop.my.salesforce.com/services/apexrest/news_letter",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ email }),
+        }
+      );
+
+      const result = await response.text();
+      setMessage(result);
+      setEmail('')
+    } catch (error) {
+      console.error(error);
+      setMessage("Something went wrong");
+    }
+  };
+
     return (
         <>
         <section className="section-newsletter pb-120 pt-120 fix position-relative">
@@ -81,7 +131,7 @@ function NewsletterSection() {
                                 data-aos="fade-zoom-in"
                                 data-aos-delay="100"
                             >
-                                Subscribe to our Blogs!
+                                Subscribe to our Blogs! 
                             </h1>
                             <p
                                 className="fs-6 fw-medium aos-init"
@@ -91,35 +141,36 @@ function NewsletterSection() {
                                 Join 52,000+ people on our newsletter
                             </p>
 
-
                             <div className="getInput input-group mb-2 mt-4 position-relative">
-
+                              <form className="d-flex flex-wrap" onSubmit={handleSubmit}>
                                 <input
                                     className="inputEmailBtn"
                                     placeholder="Enter your mail.."
-                                    type="text"
+                                    type="email"
                                     name="name"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    required
                                 />
-                                <div className="">
+                               
                                     <button
                                         className="joinBtn"
-                                        type="button"
+                                        // type="button"
+                                        type="submit"
                                         data-aos="fade-zoom-in"
                                         data-aos-delay="100"
                                     >
                                         Join Now
                                     </button>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/* Background image */}
                 <div className="position-absolute top-50 start-50 translate-middle z-0">
                     <img src={bgLine} alt="Codm"  width={'100%'}/>
                 </div>
-
             </div>
         </section>
         </>

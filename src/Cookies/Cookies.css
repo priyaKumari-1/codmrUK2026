@@ -29,17 +29,6 @@
     transform: translateX(0);
 }
 
-/* #cookieConsent::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--codm-primary) 0%, var(--codm-secondary) 100%);
-    border-radius: 12px 12px 0 0;
-} */
-
 .cookie-container {
     display: flex;
     flex-direction: column;

@@ -1,6 +1,3 @@
-// import Accordion from "../../ui/Accordion/Accordion"
-// import Accordion from "../../../../components/ui/Accordion/Accordion";
-// import Accordion from '../../../../components/ui/Accordion/Accordion.jsx';
 import Accordion from '../../../ui/Accordion/Accordion.jsx';
 const accordionData = [
   {

@@ -41,11 +41,10 @@
   line-height: 1;
 }
 
-/* Icon (React Icons or SVG) */
 .btn-icon {
   display: flex;
   align-items: center;
-  font-size: 1.2rem; /* applies if using react-icons */
+  font-size: 1.2rem;
 }
 
 .custom-btn svg {

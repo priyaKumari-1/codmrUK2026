@@ -11,27 +11,6 @@ function AgentforceAISidebar() {
   return (
     <div className=''>
         <BlogSidebar/>
-        {/* next  */}
-                        {/* video section */}
-        
-                        {/* <div className="mt-5" style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
-                            <iframe
-                                src="https://www.youtube.com/embed/buQ48j8Zr94?si=GWkmqJwMFpJ5_NjF"
-                                title="YouTube video"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                                style={{
-                                    position: "absolute",
-                                    top: 0,
-                                    left: 0,
-                                    width: "100%",
-                                    height: "100%",
-                                    borderRadius: "10px",
-                                }}
-                            ></iframe>
-                        </div> */}
-        
                         {/* next container */}
                         <div className="S_right_Container purple-bg rounded-4 mt-7 position-relative">
         

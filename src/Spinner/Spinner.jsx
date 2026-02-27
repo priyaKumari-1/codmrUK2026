@@ -18,23 +18,3 @@ function Spinner() {
 }
 
 export default Spinner;
-
-
-
-// import spinnerImg from '../assets/imgs/template/New Favicon.svg';
-// import './Spinner.css';
-
-// function Spinner() {
-//   return (
-
-//     <div style={{padding:"10rem"}}>
-//     <div className='SpinnerConatainer'  
-//     >
-//      <img src={spinnerImg} alt="" />
-//       {/* <p>Loading...</p> */}
-//     </div>
-//     </div>
-//   )
-// }
-
-// export default Spinner;

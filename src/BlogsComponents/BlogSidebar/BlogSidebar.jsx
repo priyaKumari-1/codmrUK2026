@@ -2,7 +2,6 @@
 import { Link } from "react-router-dom";
 import './BlogSidebar.css';
 import img1 from '../../assets/imgs/services-details/icon-contact.svg';
-// import img2 from '../../assets/imgs/services-details-2/Integration Framework/img-3.jpg'
 
 import { NavLink } from "react-router-dom";
 
@@ -144,10 +143,6 @@ function BlogSidebar() {
                         />
                     </svg>
                 </NavLink>
-
-
-
-
             </div>
         </>
     )

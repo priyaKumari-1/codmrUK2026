@@ -16,7 +16,7 @@ function About() {
   <WhatWeDo/>
   {/* <ThirdSection/> */}
   <FourthSection/>
-  <Insurance/>
+  {/* <Insurance/> */}
   <BlogSection/>
   {/* <FifthSection/> */}
   </>

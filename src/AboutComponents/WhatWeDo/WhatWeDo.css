@@ -35,9 +35,13 @@
 }
 
 .services-grid {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 340px));
   gap: 30px;
+  justify-content: center;
 }
 
 .service-card {
@@ -79,8 +83,15 @@
 
 @media (max-width:400px){
       .service-card {
-        width: 267px;
+        /* width: 267px; */
+        margin: .4rem;
     }
+    .services-grid{
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(310px, 310px));
+       gap: 30px;
+       justify-content: center;
+    } 
 }
 
 @media (max-width: 768px) {
@@ -91,4 +102,10 @@
   .what-we-do {
     padding: 50px 20px;
   }
+   .services-grid{
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(310px, 310px));
+       gap: 30px;
+       justify-content: center;
+    } 
 }

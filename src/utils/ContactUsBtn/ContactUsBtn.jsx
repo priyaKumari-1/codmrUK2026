@@ -6,8 +6,8 @@ function ContactUsBtn() {
     <NavLink 
       to="/contact" 
       className="contact-btn btn btn-gradient d-inline-flex align-items-center gap-2"
-      data-aos="fade-zoom-in" 
-      data-aos-delay="300"
+      // data-aos="fade-zoom-in" 
+      // data-aos-delay="300"
     >
       <svg 
         xmlns="http://www.w3.org/2000/svg"

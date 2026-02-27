@@ -72,7 +72,7 @@ function Navbar() {
               >
                 Home
               </NavLink>
-            </li> 
+            </li>
 
             <li className="nav-item d-flex">
               <NavLink
@@ -94,7 +94,7 @@ function Navbar() {
                 type="button"
                 className="nav-link mobile-toggle d-flex align-items-center gap-1 serviceDiv"
                 onClick={() => toggleDropdown("service")}
-                style={{width:'100%' ,height:"84px"}}
+                style={{ width: '100%', height: "84px" }}
               >
                 <NavLink
                   to="/ItServices"
@@ -103,7 +103,7 @@ function Navbar() {
                   Services
                 </NavLink>
 
-                <MdKeyboardArrowDown className={openDropdown === "service" ? "rotate" : ""}/>
+                <MdKeyboardArrowDown className={openDropdown === "service" ? "rotate" : ""} />
               </div>
 
               <div
@@ -113,96 +113,96 @@ function Navbar() {
                 <div className="row ps-5 p-md-0">
                   {/* Column 1 */}
                   <div className="col-md-6 servicesCrm">
-                     <h6 className="text-uppercase fw-bold mb-3 text-center">
+                    <h6 className="text-uppercase fw-bold mb-3 text-center">
                       Salesforce CRM
                     </h6>
 
                     <div className="d-flex gap-4">
-                    <div>
-                    <Link
-                      to="/ItServices/salesforce-education-cloud"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Salesforce Education Cloud
-                    </Link>
+                      <div>
+                        <Link
+                          to="/ItServices/salesforce-education-cloud"
+                          className="dropdown-item"
+                          onClick={handleNavItemClick}
+                        >
+                          Salesforce Education Cloud
+                        </Link>
 
-                    <Link
-                      to="/ItServices/salesforce-financial-services"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Salesforce Financial Services
-                    </Link>
+                        <Link
+                          to="/ItServices/salesforce-financial-services"
+                          className="dropdown-item"
+                          onClick={handleNavItemClick}
+                        >
+                          Salesforce Financial Services
+                        </Link>
 
-                    <Link
-                      to="/ItServices/salesforce-health-insurance-cloud"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Salesforce Health & Insurance Cloud
-                    </Link>
+                        <Link
+                          to="/ItServices/salesforce-health-insurance-cloud"
+                          className="dropdown-item"
+                          onClick={handleNavItemClick}
+                        >
+                          Salesforce Health & Insurance Cloud
+                        </Link>
 
-                    <Link
-                      to="/ItServices/salesforce-data-cloud"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Salesforce Data Cloud
-                    </Link>
-                    <Link
-                      to="/ItServices/saleforce-marketing-cloud"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Salesforce Marketing Cloud
-                    </Link>
-
-                       </div>
-                       <div>
-                      
-                    <Link
-                      to="/ItServices/salesforce-sales-cloud"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Salesforce Sales Cloud
-                    </Link>
-
-                    <Link
-                      to="/ItServices/salesforce-service-cloud"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Salesforce Service Cloud
-                    </Link>
-
-                    <Link
-                      to="/ItServices/salesforce-energy-utilities-cloud"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Salesforce Energy and Utilities Cloud
-                    </Link> 
-
-                    <Link
-                      to="/ItServices/salesforce-manufacturing-cloud"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Salesforce Manufacturing Cloud
-                    </Link>
-
-                    <Link
-                      to="/ItServices/salesforce-nonprofit-cloud"
-                      className="dropdown-item"
-                      onClick={handleNavItemClick}
-                    >
-                      Salesforce Nonprofit Cloud
-                    </Link>
+                        <Link
+                          to="/ItServices/salesforce-data-cloud"
+                          className="dropdown-item"
+                          onClick={handleNavItemClick}
+                        >
+                          Salesforce Data Cloud
+                        </Link>
+                        <Link
+                          to="/ItServices/saleforce-marketing-cloud"
+                          className="dropdown-item"
+                          onClick={handleNavItemClick}
+                        >
+                          Salesforce Marketing Cloud
+                        </Link>
 
                       </div>
-                    </div>                    
+                      <div>
+
+                        <Link
+                          to="/ItServices/salesforce-sales-cloud"
+                          className="dropdown-item"
+                          onClick={handleNavItemClick}
+                        >
+                          Salesforce Sales Cloud
+                        </Link>
+
+                        <Link
+                          to="/ItServices/salesforce-service-cloud"
+                          className="dropdown-item"
+                          onClick={handleNavItemClick}
+                        >
+                          Salesforce Service Cloud
+                        </Link>
+
+                        <Link
+                          to="/ItServices/salesforce-energy-utilities-cloud"
+                          className="dropdown-item"
+                          onClick={handleNavItemClick}
+                        >
+                          Salesforce Energy and Utilities Cloud
+                        </Link>
+
+                        <Link
+                          to="/ItServices/salesforce-manufacturing-cloud"
+                          className="dropdown-item"
+                          onClick={handleNavItemClick}
+                        >
+                          Salesforce Manufacturing Cloud
+                        </Link>
+
+                        <Link
+                          to="/ItServices/salesforce-nonprofit-cloud"
+                          className="dropdown-item"
+                          onClick={handleNavItemClick}
+                        >
+                          Salesforce Nonprofit Cloud
+                        </Link>
+
+                      </div>
+                    </div>
                   </div>
 
                   <div className="col-md-2">
@@ -283,8 +283,8 @@ function Navbar() {
                       className="dropdown-item"
                       onClick={handleNavItemClick}
                     >
-                     Deployment Support
-                    </Link>   
+                      Deployment Support
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -305,7 +305,7 @@ function Navbar() {
                 <li><NavLink to="/ItServices/salesforce-service-cloud" onClick={handleNavItemClick}>Salesforce Service Cloud</NavLink></li>
                 <li><NavLink to="/ItServices/salesforce-energy-utilities-cloud" onClick={handleNavItemClick}>Salesforce Energy and Utilities Cloud</NavLink></li>
                 <li><NavLink to="/ItServices/salesforce-manufacturingcloud" onClick={handleNavItemClick}>Salesforce Manufacturing Cloud</NavLink></li>
-                 <li><NavLink to="/ItServices/salesforce-nonprofit-cloud" onClick={handleNavItemClick}>Salesforce Nonprofit Cloud</NavLink></li>
+                <li><NavLink to="/ItServices/salesforce-nonprofit-cloud" onClick={handleNavItemClick}>Salesforce Nonprofit Cloud</NavLink></li>
 
                 {/* Data */}
                 <li className="accordion-title mt-3">Data</li>
@@ -325,8 +325,8 @@ function Navbar() {
                 <li className="accordion-title mt-3">Support</li>
 
                 <li><NavLink to="/ItServices/Technical-Support" onClick={handleNavItemClick}>Technical Support</NavLink></li>
-                <li><NavLink to="/ItServices/Deployment-Support" onClick={handleNavItemClick}> Deployment Support</NavLink></li>    
-                
+                <li><NavLink to="/ItServices/Deployment-Support" onClick={handleNavItemClick}> Deployment Support</NavLink></li>
+
               </ul>
 
 
@@ -336,17 +336,17 @@ function Navbar() {
             <li className="nav-item mega-dropdown1 blogsli">
               <div
                 type="button"
-                className="nav-link mobile-toggle blogsDiv gap-1 nav-link mobile-toggle d-flex align-items-center" 
+                className="nav-link mobile-toggle blogsDiv gap-1 nav-link mobile-toggle d-flex align-items-center"
                 onClick={() => toggleDropdown("blog")}
-                 style={{width:'100%' ,height:"84px"}}
+                style={{ width: '100%', height: "84px" }}
               >
                 <NavLink to="/blog"
                   className="text-decoration-none text-reset">
-                Blogs
-                </NavLink> 
-                 <MdKeyboardArrowDown
-                    className={openDropdown === "blog" ? "rotate" : ""}
-                  />
+                  Blogs
+                </NavLink>
+                <MdKeyboardArrowDown
+                  className={openDropdown === "blog" ? "rotate" : ""}
+                />
               </div>
 
               {/* for lg screen */}
@@ -386,7 +386,7 @@ function Navbar() {
                   <Link
                     className="dropdown-item"
                     to="/blog/Salesforce-Einstein"
-                    onClick={handleNavItemClick}  
+                    onClick={handleNavItemClick}
                   >
                     Salesforce AI + Synergy
                   </Link>
@@ -401,7 +401,7 @@ function Navbar() {
                     className="dropdown-item"
                     to="/blog/AgentforceFinancialServices"
                     onClick={handleNavItemClick}
-                  > 
+                  >
                     Salesforce Financial Service Cloud
                   </Link>
 
@@ -409,8 +409,8 @@ function Navbar() {
                     className="dropdown-item"
                     to="/blog/AgentforceAI"
                     onClick={handleNavItemClick}
-                  > 
-                  AI Powered Salesforce Development
+                  >
+                    AI Powered Salesforce Development
                   </Link>
                 </div>
 
@@ -426,7 +426,7 @@ function Navbar() {
               </ul>
             </li>
 
-             {/* <li className="nav-item d-flex justify-content-center align-items-center">
+            {/* <li className="nav-item d-flex justify-content-center align-items-center">
               <NavLink
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active-link" : ""}`
@@ -439,33 +439,33 @@ function Navbar() {
               </NavLink>
             </li> */}
 
-         
+
             <li className="nav-item mega-dropdown1 position-relative">
-  <div className="d-flex align-items-center nav-link text-reset"
-  style={{width:'100%' ,height:"84px"}}>
-    PARTNER
-    <MdKeyboardArrowDown className="ms-1" />
-  </div>
+              <div className="d-flex align-items-center nav-link text-reset PartnerDiv"
+                style={{ width: '100%', height: "84px" }}>
+                PARTNER
+                <MdKeyboardArrowDown className="ms-1"/>
+              </div>
 
-  {/* Dropdown Menu */}
-  <ul className="partner-dropdown list-unstyled">
-    <li className="nav-item d-flex justify-content-center align-items-center">
-      <NavLink
-        className="nav-link"
-        to="https://saasailabs.codmsoftware.co.uk/"
-        target="_blank"
-      >
-        SAAS AI LABS
-      </NavLink>
-    </li>
-  </ul>
-</li>
+              {/* Dropdown Menu */}
+              <ul className="partner-dropdown list-unstyled">
+                <li className="nav-item d-flex justify-content-center align-items-center">
+                  <NavLink
+                    className="nav-link"
+                    to="https://saasailabs.codmsoftware.co.uk/"
+                    target="_blank"
+                  >
+                    SAAS AI LABS
+                  </NavLink>
+                </li>
+              </ul>
+            </li>
 
 
-               <li className="nav-item  d-flex justify-content-center align-items-center">
+            <li className="nav-item  d-flex justify-content-center align-items-center">
               <NavLink
                 className={({ isActive }) =>
-                `nav-link ${isActive ? "active-link" : ""}`
+                  `nav-link ${isActive ? "active-link" : ""}`
                 }
                 to="/contact"
                 onClick={handleNavItemClick}
@@ -474,8 +474,8 @@ function Navbar() {
               </NavLink>
             </li>
 
-             <li className="nav-item">
-              <Link
+            <li className="nav-item">
+              <a
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active-link" : ""}`
                 }
@@ -483,9 +483,9 @@ function Navbar() {
                 target="_blank"
                 onClick={handleNavItemClick}
               >
-             <button className="p-2 rounded-3 purple-bg border-0">Join Us</button>
-              </Link>
-            </li> 
+                <button className="p-2 rounded-3 purple-bg border-0">Join Us</button>
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -498,8 +498,8 @@ function Navbar() {
             />
             <p className="align-items-center" style={{ fontSize: ".9rem", marginBottom: "1px" }}>UK: (+44) 0121 818 6924</p>
           </div>
-         
-          <div className="d-flex align-items-center"> 
+
+          <div className="d-flex align-items-center">
             <img
               src={flag3}
               alt="USA Flag"
@@ -513,7 +513,7 @@ function Navbar() {
               src={flag2}
               alt="UK Flag"
               style={{ width: "15px", height: "13px", marginRight: "6px", paddingTop: "0rem", }}
-            /> 
+            />
             <p className="align-items-center" style={{ fontSize: ".9rem", marginBottom: "1px" }}>India : (+91) 9717116432</p>
           </div>
         </div>

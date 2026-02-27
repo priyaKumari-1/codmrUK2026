@@ -5,9 +5,7 @@ import HeadingContent from '../../ui/HeadingContent/HeadingContent';
 import icon1 from '../../../assets/imgs/services-details/icon-5.svg';
 import icon2 from '../../../assets/imgs/services-details/icon-6.svg';
 
-
 import img1 from '../../../assets/imgs/services-details-2/AgentforceFinancialServices/AgentfinanceService.webp';
-
 
 import AgentforcePara from "../../ui/AgentforcePara/AgentforcePara";
 // import FlipImgwithContentAgentforce from "./FlipImgwithContentAgentforce";
@@ -47,7 +45,6 @@ function AgentforceAI_First() {
                             width={'100%'}
                         /> */}
 
-                        
                         <iframe width="100%" height="335" className="rounded-1" src="https://www.youtube.com/embed/lYzJoih1SSA?si=5iiPOB0eV5bgNP2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                        
                         <HeadingContent
@@ -260,7 +257,6 @@ function AgentforceAI_First() {
 
 
                     <div className="col-lg-4 sidebar">
-                        {/* <AgentforceAISidebar/> */}
                         <AgentforceAISidebar/>
                         
                     </div>

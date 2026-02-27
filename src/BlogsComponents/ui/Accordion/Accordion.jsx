@@ -47,23 +47,3 @@ const Accordion = ({ title, items, defaultOpen = 0 }) => {
 };
 
 export default Accordion;
-
-
-//  how to use this 
- 
-//   <Accordion
-//       title="Use Cases of Salesforce Education Cloud"
-//       items={accordionData}
-//       defaultOpen={0} 
-//     />
-
-// and here is data format
-
-// const accordionData = [
-//   {
-//     number: 1,
-//     title: "Admissions & Enrollment",
-//     content:
-//       "Institutions can attract, engage, and convert prospective students with tailored campaigns and seamless application processes. From first interest to first day on campus, every step is automated and tracked."
-//   },]
-

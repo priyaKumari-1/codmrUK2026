@@ -1,7 +1,5 @@
 .event-card {
   transition: transform 0.3s ease;
-  /* background:#f3f4f6; */
-  /* background-color: red; */
   height: 100%;
 }
 .event-card:hover {
@@ -31,7 +29,7 @@
     color: white;
     filter: brightness(90%);
 }
-/* POPUP VIEWER */
+
 .image-viewer-overlay {
   position: fixed;
   top: 10%;

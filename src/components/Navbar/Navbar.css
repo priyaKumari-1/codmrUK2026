@@ -222,9 +222,13 @@
 }
 .serviceDiv{
   height: 30px !important;
+  margin-top: -10px;
 }
 .blogsDiv{
  height: 35px !important;
+}
+.PartnerDiv{
+  height: 35px !important;
 }
 }
 

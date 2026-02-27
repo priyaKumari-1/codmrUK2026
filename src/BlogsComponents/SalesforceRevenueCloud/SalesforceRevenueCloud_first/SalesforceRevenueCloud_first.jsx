@@ -5,9 +5,6 @@ import img2 from '../../../assets/imgs/services-details-2/Revenue-Cloud/img-3.jp
 import icon2 from '../../../assets/imgs/services-details/icon-6.svg';
 // icons
 import icon1 from '../../../assets/imgs/services-details/icon-5.svg';
-// import "./S_secondSection.css";
-// import S_thirdSection from '../S_thirdSection/S_thirdSection';
-// import S_rightContainer from '../S_rightContainer/S_rightContainer';
 
 import img3 from '../../../assets/imgs/services-details-2/Education-Cloud/img-4.png';
 import HeadingContent from '../../ui/HeadingContent/HeadingContent';

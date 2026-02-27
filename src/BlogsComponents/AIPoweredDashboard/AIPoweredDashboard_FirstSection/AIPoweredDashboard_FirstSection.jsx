@@ -184,10 +184,7 @@ function AIPoweredDashboard_FirstSection() {
 
                     </div>
 
-                    {/* sidebar */}
-
                     <div className="col-lg-4 sidebar">
-                        {/* need to create different componets with useState */}
                         <AlPoweredDashboardSidebar />
                     </div>
 

@@ -64,14 +64,3 @@ const ServicePageHeaderSection = ({
 
 
 export default ServicePageHeaderSection;
-
-
-
-
-// how to use this components
-//  <ServicePageHeaderSection
-//         title="Salesforce Education Cloud"
-//         breadcrumb={["Home", "Education Cloud"]}
-//         bgImg={bgImg1}
-//       />
-

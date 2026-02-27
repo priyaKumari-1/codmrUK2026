@@ -1,30 +1,3 @@
-// import './Cookies.css';
-// import { useState } from 'react';
-
-// function Cookies() {
-//     const [showBanner, setShowBanner] = useState(false);
-
-//     const acceptAll = () => {
-
-//     }
-
-//     return (
-//         <div id='cookiesConatiner' className={showBanner ? "show" : ""}>
-//             <h3>We Value Your Privacy</h3>
-//             <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
-
-//             <div className='d-flex gap-5 my-5'>
-//                 <button className='cookie-btn'>Decline</button>
-//                 <button className='cookie-btn' onClick={() => acceptAll}>Accept All</button>
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default Cookies;
-
-
-
 import { useEffect, useState } from "react";
 import "./Cookies.css";
 import { Link } from "react-router-dom";
@@ -51,7 +24,6 @@ const getCookie = (name) => {
 export default function Cookies() {
   const [showBanner, setShowBanner] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-
   const [analytics, setAnalytics] = useState(true);
   const [marketing, setMarketing] = useState(false);
   const [functional, setFunctional] = useState(false);
@@ -62,12 +34,66 @@ export default function Cookies() {
     }
   }, []);
 
-  const savePreferences = (prefs) => {
-    setCookie(COOKIE_NAME, JSON.stringify(prefs), COOKIE_EXPIRE_DAYS);
-    enableCookies(prefs);
-    setShowBanner(false);
-    setShowSettings(false);
-  };
+
+  
+  // for accesing the token 
+      async function getAccessToken() {
+      const params = new URLSearchParams(); 
+      params.append("grant_type",import.meta.env.VITE_grant_type);
+      params.append("client_id",import.meta.env.VITE_client_id);
+      params.append("client_secret",import.meta.env.VITE_client_secret);
+    
+      const response = await fetch(
+        "https://codmsoftwarepvtltd9-dev-ed.develop.my.salesforce.com/services/oauth2/token",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",    
+          },
+          body: params,
+        }
+      );
+      const data = await response.json();
+      return data.access_token;
+     }
+
+  // saving the data
+  const savePreferences = async (prefs) => {
+  setCookie(COOKIE_NAME, JSON.stringify(prefs), COOKIE_EXPIRE_DAYS);
+  enableCookies(prefs);
+
+  try {
+    const token = await getAccessToken();
+
+    const response = await fetch(
+      "https://codmsoftwarepvtltd9-dev-ed.develop.my.salesforce.com/services/apexrest/cookie_preferences",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify(prefs),
+      }
+    );
+
+    const result = await response.text();
+    console.log(result);
+
+  } catch (error) {
+    console.error("Error saving cookie prefs:", error);
+  }
+
+  setShowBanner(false);
+  setShowSettings(false);
+};
+
+  // const savePreferences = (prefs) => {
+  //   setCookie(COOKIE_NAME, JSON.stringify(prefs), COOKIE_EXPIRE_DAYS);
+  //   enableCookies(prefs);
+  //   setShowBanner(false);
+  //   setShowSettings(false);
+  // };
 
   const acceptAll = () =>
     savePreferences({

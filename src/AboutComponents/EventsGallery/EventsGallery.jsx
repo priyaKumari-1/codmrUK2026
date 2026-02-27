@@ -20,29 +20,6 @@ const EventsGallery = () => {
       img: BirthdayImage,
       description: "A joyful birthday celebration filled with laughter, love, and unforgettable moments."
     },
-    // {
-    //   title: "Diwali Celebration",
-    //   category: "Festival",
-    //   img: DiwaliImage,
-    //   description: "Festival of lights celebrated with joy, decor & ethnic wear."
-    // },
-    // {
-    //   title: "Birthday Celebration",
-    //   category: "Birthday",
-    //   img: BirthdayImage,
-    //   description: "A joyful birthday celebration filled with laughter, love, and unforgettable moments."
-    // },{
-    //   title: "Diwali Celebration",
-    //   category: "Festival",
-    //   img: DiwaliImage,
-    //   description: "Festival of lights celebrated with joy, decor & ethnic wear."
-    // },
-    // {
-    //   title: "Birthday Celebration",
-    //   category: "Birthday",
-    //   img: BirthdayImage,
-    //   description: "A joyful birthday celebration filled with laughter, love, and unforgettable moments."
-    // }
   ];
 
   const filters = ["All", "Festival", "Birthday", "Team Outings"];

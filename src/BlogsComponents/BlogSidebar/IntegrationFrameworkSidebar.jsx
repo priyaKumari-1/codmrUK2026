@@ -9,7 +9,6 @@ function IntegrationFrameworkSidebar() {
   return (
     <div className=''>
         <BlogSidebar/>
-        {/* next  */}
                         {/* video section */}
         
                         <div className="mt-5" style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>

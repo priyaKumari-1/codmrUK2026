@@ -10,7 +10,6 @@ import img1 from '../../../assets/imgs/services-details-2/AgentforceFinancialSer
 
 
 import AgentforcePara from "../../ui/AgentforcePara/AgentforcePara";
-// import FlipImgwithContentAgentforce from "./FlipImgwithContentAgentforce";
 import FlipImgwithContent from "../../ui/FlipImgwithContent/FlipImgwithContent";
 import BlogFormSection from "../../ui/BlogFormSection/BlogFormSection";
 import BlogSection from "../../../components/BlogSection/BlogSection";
@@ -54,8 +53,6 @@ function AgentforceFinancialServices_FirstSection() {
                             alt="Codm"
                             width={'100%'}
                         />
-
-                        {/* <iframe width="100%" height="315" src="https://www.youtube.com/embed/SXgDcefKprU?si=BPkuQGhVXzSdTPBl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
 
                         <HeadingContent
                             title="How are financial services using Agentforce"
@@ -269,29 +266,17 @@ function AgentforceFinancialServices_FirstSection() {
 
                         <div className='border-bottom pb-3'></div>
 
-                        {/* next content section */}
-
-                        {/* 
-                        <div className='border-bottom'></div> */}
-
-
-
                     </div>
 
                     {/* sidebar */}
 
 
                     <div className="col-lg-4 sidebar">
-                        {/* need to create different componets with useState */}
                         <AgentforceFinancialServicesBlog/>
                     </div>
 
-                    {/* code section */}
-                    {/* <CodeSection/> */}
-
                     {/* form section */}
-                             <BlogFormSection/>
-                    {/* last section */}
+                        <BlogFormSection/>
 
                     <BlogSection/>
 

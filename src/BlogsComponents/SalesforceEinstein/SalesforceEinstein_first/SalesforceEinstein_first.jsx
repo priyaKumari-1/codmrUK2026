@@ -253,15 +253,6 @@ function SalesforceEinstein_first() {
                     <div className="col-lg-4 sidebar">
                         <SalesforceEinsteinSidebar/>
                     </div>
-
-                    {/* code section */}
-                    {/* <CodeSection/> */}
-
-                    {/* form section */}
-
-                    {/* last section */}
-
-
                 </div>
             </div>
         </>
