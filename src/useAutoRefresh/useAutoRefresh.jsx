@@ -6,7 +6,6 @@ function useAutoRefresh() {
       try {
         const res = await fetch("/version.json", { cache: "no-store" });
         const data = await res.json();
-        console.log(data)
 
         const currentVersion = localStorage.getItem("app_version");
 

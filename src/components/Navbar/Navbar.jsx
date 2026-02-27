@@ -427,7 +427,7 @@ function Navbar() {
             </li>
 
             <li className="nav-item mega-dropdown1 position-relative">
-              <div className="d-flex align-items-center nav-link text-reset PartnerDiv"
+              <div className="d-flex align-items-center nav-link text-reset PartnerDiv partnerfontsize"
                 style={{ width: '100%', height: "84px" }}>
                 PARTNER
                 <MdKeyboardArrowDown className="ms-1"/>

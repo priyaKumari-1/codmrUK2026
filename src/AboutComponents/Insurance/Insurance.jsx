@@ -91,23 +91,23 @@ function Insurance() {
             <div className="stat-number">
               <CountUp end={20} duration={2000} enableScrollSpy scrollSpyOnce={false} /><span>+</span>
             </div>
-            <div class="stat-label">Projects Delivered</div>
+            <div className="stat-label">Projects Delivered</div>
           </div>
-          <div class="stat-card">
+          <div className="stat-card">
             <div className="stat-number">
               <CountUp end={20} duration={2000} enableScrollSpy scrollSpyOnce={false} /><span>+</span>
             </div>
-            <div class="stat-label">Happy Clients</div>
+            <div className="stat-label">Happy Clients</div>
           </div>
-          <div class="stat-card">
+          <div className="stat-card">
              <div className="stat-number">
             <CountUp end={98} duration={6000} enableScrollSpy scrollSpyOnce={false} /><span>+</span>
             </div>
-            <div class="stat-label">Satisfaction Rate</div>
+            <div className="stat-label">Satisfaction Rate</div>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">24/7</div>
-            <div class="stat-label">Support Available</div>
+          <div className="stat-card">
+            <div className="stat-number">24/7</div>
+            <div className="stat-label">Support Available</div>
           </div>
         </div>
       </div>

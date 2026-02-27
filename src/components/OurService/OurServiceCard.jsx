@@ -25,7 +25,7 @@ function OurServiceCard({ title, description, imageSrc, imageAlt, linkHref }) {
                         {/* learn more */}
                         <div className="btn_container">
                             
-                            <Link to={linkHref} className="text-black text-decoration-none">
+                            <Link to={linkHref} className="text-black text-decoration-none"></Link>
                              <div className="addbtn">
                                 <svg className="plus" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <g clipPath="url(#clip0_226_5470)">
@@ -43,9 +43,7 @@ function OurServiceCard({ title, description, imageSrc, imageAlt, linkHref }) {
                                     <Link to={linkHref} className="text-black text-decoration-none">learn more</Link>
                                 </span>
                                 
-                                 
                             </div>
-                            </Link>
                         </div>
                     </div>
                 </div>

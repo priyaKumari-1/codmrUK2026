@@ -57,7 +57,6 @@ export default function Cookies() {
     //   return data.access_token;
     //  }
 
-
     
   // saving the data
   const savePreferences = async (prefs) => {
@@ -80,7 +79,7 @@ export default function Cookies() {
     );
 
     const result = await response.text();
-    console.log(result);
+    // console.log(result);
 
   } catch (error) {
     console.error("Error saving cookie prefs:", error);
@@ -123,7 +122,7 @@ export default function Cookies() {
 
   const enableCookies = (prefs) => {
     if (prefs.analytics) {
-      console.log("Analytics cookies enabled");
+      // console.log("Analytics cookies enabled");
       // gtag('consent', 'update', { analytics_storage: 'granted' });
     }
     if (prefs.marketing) {
