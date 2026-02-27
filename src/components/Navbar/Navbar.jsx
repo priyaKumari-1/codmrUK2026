@@ -426,20 +426,6 @@ function Navbar() {
               </ul>
             </li>
 
-            {/* <li className="nav-item d-flex justify-content-center align-items-center">
-              <NavLink
-                className={({ isActive }) =>
-                  `nav-link ${isActive ? "active-link" : ""}`
-                }
-                to="https://saasailabs.codmsoftware.co.uk/"
-                onClick={handleNavItemClick} 
-                target="_blank"
-              >
-              SAAS AI LABS  
-              </NavLink>
-            </li> */}
-
-
             <li className="nav-item mega-dropdown1 position-relative">
               <div className="d-flex align-items-center nav-link text-reset PartnerDiv"
                 style={{ width: '100%', height: "84px" }}>

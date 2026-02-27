@@ -37,52 +37,52 @@ function NewsletterSection() {
   const [email,setEmail]   = useState('');
 
   // for accesing the token 
-      async function getAccessToken() {
-      const params = new URLSearchParams(); 
-      params.append("grant_type",import.meta.env.VITE_grant_type);
-      params.append("client_id",import.meta.env.VITE_client_id);
-      params.append("client_secret",import.meta.env.VITE_client_secret);
+    //   async function getAccessToken() {
+    //   const params = new URLSearchParams(); 
+    //   params.append("grant_type",import.meta.env.VITE_grant_type);
+    //   params.append("client_id",import.meta.env.VITE_client_id);
+    //   params.append("client_secret",import.meta.env.VITE_client_secret);
     
-      const response = await fetch(
-        "https://codmsoftwarepvtltd9-dev-ed.develop.my.salesforce.com/services/oauth2/token",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",    
-          },
-          body: params,
-        }
-      );
-      const data = await response.json();
-      return data.access_token;
-     }
+    //   const response = await fetch(
+    //     "https://codmsoftwarepvtltd9-dev-ed.develop.my.salesforce.com/services/oauth2/token",
+    //     {
+    //       method: "POST",
+    //       headers: {
+    //         "Content-Type": "application/x-www-form-urlencoded",    
+    //       },
+    //       body: params,
+    //     }
+    //   );
+    //   const data = await response.json();
+    //   return data.access_token;
+    //  }
 
    // for sending the email
-   const handleSubmit = async (e) => {
-    e.preventDefault();
-     const token = await getAccessToken();
+//    const handleSubmit = async (e) => {
+//     e.preventDefault();
+//      const token = await getAccessToken();
 
-    try {
-      const response = await fetch(
-        "https://codmsoftwarepvtltd9-dev-ed.develop.my.salesforce.com/services/apexrest/news_letter",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-          body: JSON.stringify({ email }),
-        }
-      );
+//     try {
+//       const response = await fetch(
+//         "https://codmsoftwarepvtltd9-dev-ed.develop.my.salesforce.com/services/apexrest/news_letter",
+//         {
+//           method: "POST",
+//           headers: {
+//             "Content-Type": "application/json",
+//             Authorization: `Bearer ${token}`,
+//           },
+//           body: JSON.stringify({ email }),
+//         }
+//       );
 
-      const result = await response.text();
-      setMessage(result);
-      setEmail('')
-    } catch (error) {
-      console.error(error);
-      setMessage("Something went wrong");
-    }
-  };
+//       const result = await response.text();
+//       setMessage(result);
+//       setEmail('')
+//     } catch (error) {
+//       console.error(error);
+//       setMessage("Something went wrong");
+//     }
+//   };
 
     return (
         <>
@@ -155,7 +155,6 @@ function NewsletterSection() {
                                
                                     <button
                                         className="joinBtn"
-                                        // type="button"
                                         type="submit"
                                         data-aos="fade-zoom-in"
                                         data-aos-delay="100"

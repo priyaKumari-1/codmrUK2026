@@ -37,26 +37,28 @@ export default function Cookies() {
 
   
   // for accesing the token 
-      async function getAccessToken() {
-      const params = new URLSearchParams(); 
-      params.append("grant_type",import.meta.env.VITE_grant_type);
-      params.append("client_id",import.meta.env.VITE_client_id);
-      params.append("client_secret",import.meta.env.VITE_client_secret);
+    //   async function getAccessToken() {
+    //   const params = new URLSearchParams(); 
+    //   params.append("grant_type",import.meta.env.VITE_grant_type);
+    //   params.append("client_id",import.meta.env.VITE_client_id);
+    //   params.append("client_secret",import.meta.env.VITE_client_secret);
     
-      const response = await fetch(
-        "https://codmsoftwarepvtltd9-dev-ed.develop.my.salesforce.com/services/oauth2/token",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",    
-          },
-          body: params,
-        }
-      );
-      const data = await response.json();
-      return data.access_token;
-     }
+    //   const response = await fetch(
+    //     "https://codmsoftwarepvtltd9-dev-ed.develop.my.salesforce.com/services/oauth2/token",
+    //     {
+    //       method: "POST",
+    //       headers: {
+    //         "Content-Type": "application/x-www-form-urlencoded",    
+    //       },
+    //       body: params,
+    //     }
+    //   );
+    //   const data = await response.json();
+    //   return data.access_token;
+    //  }
 
+
+    
   // saving the data
   const savePreferences = async (prefs) => {
   setCookie(COOKIE_NAME, JSON.stringify(prefs), COOKIE_EXPIRE_DAYS);

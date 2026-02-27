@@ -25,7 +25,7 @@ function Hero() {
               {heroSection.HEADING}
             </h1>
             <p className="text-sm text-gray-600 mt-4">
-             We deliver enterprise-scale software solutions designed for the future helping businesses modernize, streamline operations, and scale with confidence using advanced cloud and CRM technologies. Our development approach follows SOLID principles, ensuring clean, maintainable, and highly scalable architecture from day one.
+             We deliver enterprise-scale Salesforce solutions and AI-driven transformations that drive measurable business impact. From Sales Cloud optimization to intelligent automation, we partner with you to modernize, streamline, and scale operations using cutting-edge technologies and industry best practices. Our certified experts bring proven expertise across 8+ industries, delivering 50+ successful implementations with average ROI improvements of 300-400%.
             </p>
 
             <div className="py-4 d-flex gap-3 flex-wrap">
