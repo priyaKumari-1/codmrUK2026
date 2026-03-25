@@ -155,7 +155,7 @@ function App() {
               <Route path="/blog/trigger-framework" element={<TriggerframeworkBlog />} />
               <Route path="/blog/AI-Powered-Dashboard" element={<AIPoweredDashboard />} />
               <Route path="/blog/salesforceagentforce" element={<AgentforceImplementation />} />
-              <Route path="/blog/Salesforce-Einstein" element={<SalesforceEinstein />} />
+              <Route path="/blog/salesforce-einstein-ai-synergy" element={<SalesforceEinstein />} />
               <Route path="/blog/Salesforce-Revenue-Cloud" element={<SalesforceRevenueCloud />} />
               <Route path="/blog/AgentforceFinancialServices" element={<AgentforceFinancialServices />} />
               <Route path="/blog/AgentforceAI" element={<AgentforceAI/>} />

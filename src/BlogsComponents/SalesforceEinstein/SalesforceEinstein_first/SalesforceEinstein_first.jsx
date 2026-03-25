@@ -54,7 +54,7 @@ function SalesforceEinstein_first() {
                             title="What is Salesforce Einstein + AI Synergy?"
                             content={
                                 <>
-                                    <p>Salesforce Einstein is an AI layer embedded within Salesforce that brings predictive analytics, natural language processing, and automation directly to your business workflows. By extending Einstein's native capabilities with external AI tools like OpenAI, Azure AI, and custom ML models, we help you.<b className="text-black">Make intelligent predictions</b> AI models analyze historical data to forecast trends, customer behavior, and sales opportunities, enabling proactive decision-making.</p>
+                                    <p>Salesforce Einstein is an AI layer embedded within Salesforce that brings predictive analytics, natural language processing, and automation directly to your business workflows. By extending Einstein's native capabilities with external AI tools like OpenAI, Azure AI, and custom ML models, we help you.<b className="text-black"> Make intelligent predictions</b> AI models analyze historical data to forecast trends, customer behavior, and sales opportunities, enabling proactive decision-making.</p>
                                 </>
                             }
                         />
