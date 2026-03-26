@@ -81,3 +81,9 @@ font-weight: 600;
  font-size: 40px;
  text-transform: unset;
 } 
+
+  @media (max-width: 576px) {
+    .Heading3{
+    font-size: 30px;
+    }
+  }

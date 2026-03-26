@@ -8,7 +8,7 @@ import FreeQuote from "./FreeQuote";
 function Hero4() {
   return (
     <section>
-      <div className="Hero4_container container-fluid position-relative section-padding py-lg-5 px-lg-5 pb-5">
+      <div className="Hero4_container container-fluid position-relative Hero4-section-padding py-lg-5 px-lg-5 pb-5">
         <div className="container">
           <div className="row align-items-start">
             {/* Left Image */}
